@@ -1,0 +1,136 @@
+#1.打开组织管理
+organization_manage: "By.XPATH, '//div[text()=\"组织管理\"]'"
+#打开用户管理
+user_manage: "By.XPATH, '//li[text()=\"用户管理 \"]'"
+#2.编辑职级按钮
+edit_rank_loc: "By.XPATH, '//button/span[text()=\"编辑职级\"]'"
+#创建下级
+edit_rank_lower: "By.XPATH, '//span[text()=\"下级\"]'"
+#职级输入框
+edit_input_rank_name: "By.CSS_SELECTOR, '.rankdialogleft input[type=\"text\"]', 1"
+#确认创建职级
+edit_rank_confirm: "By.CSS_SELECTOR, '.rankdialogleft button'"
+#已创建职级
+edit_rank_name: "By.XPATH, '//span[text()=\"职级测试 \"]'"
+#删除职级按钮
+edit_rank_delete: "By.CSS_SELECTOR, '.rankdialogright button'"
+#部门名称列表
+edit_rank_name_list: "By.CSS_SELECTOR, '.rankdialogright label'"
+#3.创建部门按钮
+department_create: "By.XPATH, '//span[text()=\"新建部门\"]'"
+#部门名称输入框
+department_name: "By.XPATH, '//input[@type=\"text\" and @placeholder=\"请输入内容\"]', 0"
+#行政级别下拉框
+rank_list: "By.CSS_SELECTOR, '.el-dialog__body i.el-icon-arrow-up', 0"
+#局级级别
+rank_juji: "By.XPATH, '//span[text()=\"局级\"]'"
+#处级级别
+rank_chuji: "By.XPATH, '//span[text()=\"处级\"]'"
+#科级级别
+rank_keji:  "By.XPATH, '//span[text()=\"科级\"]'"
+#邮箱输入框
+email: "By.XPATH, '//input[@type=\"text\" and @placeholder=\"请输入内容\"]', 1"
+#主管单位下拉框
+director: "By.CSS_SELECTOR, '.el-dialog__body i.el-icon-arrow-up', 1"
+#新建_局级主管
+director_juji: "By.XPATH, '//span[text()=\"月新时代\"]'"
+#新建_处级主管
+director_chuji: "By.XPATH, '//span[text()=\"云应用\"]'"
+#确认创建部门
+department_confirm: "By.CSS_SELECTOR, '.el-form button[class=\"el-button el-button--primary\"]', 0"
+#部门列表数量
+department_list: "By.CSS_SELECTOR, '.userleft div.el-tree-node__content'"
+#4.编辑部门
+department_edit: "By.XPATH, '//span[text()=\"编辑部门\"]'"
+#编辑_选中局级
+department_rank_juji:  "By.XPATH, '//span[text()=\"月新时代(0人)\"]'"
+#编辑_选中处级
+department_rank_chuji: "By.XPATH, '//span[text()=\"云应用(0人)\"]'"
+#编辑_选中科级
+department_rank_keji: "By.XPATH, '//span[text()=\"测试(0人)\"]'"
+#编辑_局级主管
+edit_director_juji: "By.XPATH, '//span[text()=\"北京月新时代科技股份有限公司\"]'"
+#编辑_处级主管
+edit_director_chuji: "By.XPATH, '//span[text()=\"云应用事业部\"]'"
+#5.删除部门按钮
+delete_department: "By.XPATH, '//div/button/span[text()=\"删除\"]'"
+#删除_选中局级
+edit_rank_juji:  "By.XPATH, '//span[text()=\"北京月新时代科技股份有限公司(0人)\"]', 0"
+#删除_选中处级
+edit_rank_chuji: "By.XPATH, '//span[text()=\"云应用事业部(0人)\"]', 0"
+#删除_选中科级
+edit_rank_keji: "By.XPATH, '//span[text()=\"测试组(0人)\"]', 0"
+#确认删除部门
+delete_department_confirm: "By.CSS_SELECTOR, '.el-message-box__btns button.el-button--primary span'"
+#5.创建用户
+user_create: "By.XPATH, '//button/span[text()=\"新建\"]'"
+#用户名输入框
+user_name: "By.CSS_SELECTOR, '.el-form--inline input[placeholder=\"以字母开头,最多20个字符\"]'"
+#姓名输入框
+name: "By.CSS_SELECTOR, '.el-form--inline input[placeholder=\"不能输入特殊字符\"]'"
+#单位列表
+unit_list: "By.CSS_SELECTOR, '.el-form--inline button.el-popover__reference'"
+#用户单位_局级
+unit_juji: "By.CSS_SELECTOR, 'div[role=\"tooltip\"] div.el-tree-node__content', 0"
+#用户单位_处级
+unit_chuji: "By.CSS_SELECTOR, 'div[role=\"tooltip\"] div.el-tree-node__content', 1"
+#用户单位_科级
+unit_keji: "By.CSS_SELECTOR, 'div[role=\"tooltip\"] div.el-tree-node__content', 2"
+#IP输入框
+ip_address: "By.CSS_SELECTOR, 'input[placeholder=\"请输入内容\"]', 2"
+#MAC输入框
+mac_address: "By.CSS_SELECTOR, 'input[placeholder=\"请输入内容\"]', 3"
+#性别男
+man: "By.CSS_SELECTOR, 'span.el-radio__label', 0"
+#性别女
+women: "By.CSS_SELECTOR, 'span.el-radio__label', 1"
+#电话输入框
+tel: "By.CSS_SELECTOR, 'input[placeholder=\"请输入内容\"]', 4"
+#手机输入框
+mobile: "By.CSS_SELECTOR, 'input[placeholder=\"请输入内容\"]', 5"
+#AD域复选框
+ad: "By.CSS_SELECTOR, '.el-checkbox-group label.el-checkbox', 0"
+#NIS域复选框
+nis: "By.CSS_SELECTOR, '.el-checkbox-group label.el-checkbox', 1"
+#确认创建用户
+user_create_confirm: "By.CSS_SELECTOR, '.el-form-item button.el-button--primary'"
+#用户数量文本
+user_number: "By.CSS_SELECTOR, 'span.el-pagination__total'"
+#下载导入模板
+download_template: "By.XPATH, '//button/span[text()=\"下载导入模板\"]'"
+#导入模版
+import_template: "By.XPATH, '//button/span[text()=\"导入\"]'"
+#用户全选
+user_all: "By.CSS_SELECTOR, '.el-table--enable-row-transition thead label'"
+#冻结用户
+freeze: "By.XPATH, '//button/span[text()=\"冻结\"]'"
+#用户已冻结
+user_freeze: "By.XPATH, '//p[text()=\"haoyc00(已锁定)\"]'"
+#解锁用户
+unlock: "By.XPATH, '//button/span[text()=\"解锁\"]'"
+#用户已解锁
+user_unlock: "By.XPATH, '//p[text()=\"haoyc00\"]'"
+#选择科级单位
+select_keji: "By.CSS_SELECTOR, '.userleft div.el-tree-node__content', 2"
+#选中编辑用户
+user_edit: "By.XPATH, '//p[text()=\"haoyc02\"]'"
+#用户搜索输入框
+find_box: "By.CSS_SELECTOR, 'p div input[type=\"text\"]'"
+#用户搜索按钮
+find_button: "By.CSS_SELECTOR, 'p div.el-tooltip button'"
+#修改密码
+change_pass: "By.XPATH, '//button/span[text()=\"修改密码\"]'"
+#输入新密码
+new_pass: "By.CSS_SELECTOR, 'div[aria-label=\"修改密码\"] input', 0"
+#确认密码
+confirm_pass: "By.CSS_SELECTOR, 'div[aria-label=\"修改密码\"] input', 1"
+#确认修改密码
+change_pass_confirm: "By.CSS_SELECTOR, 'footer button.el-button--primary'"
+#导出用户
+user_export: "By.XPATH, '//button/span[text()=\"导出\"]'"
+#删除用户
+user_delete: "By.XPATH, '//button/span[text()=\"删除\"]'"
+#同时删除云盘数据
+cloud_data_delete: "By.XPATH, '//span[text()=\"同时删除用户云盘相关的数据\"]'"
+#确认删除用户
+user_delete_confirm: "By.CSS_SELECTOR, 'div[aria-label=\"信息\"] button.el-button--primary'"

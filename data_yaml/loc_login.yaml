@@ -1,0 +1,30 @@
+#用户名输入框
+user_name: "By.CSS_SELECTOR, '[type=\"text\"]'"
+#密码输入框
+user_pass: "By.CSS_SELECTOR, '[type=\"password\"]'"
+#登陆按钮
+user_login: "By.CSS_SELECTOR, '.el-button--primary'"
+#登陆的用户名
+user_text: "By.CSS_SELECTOR, '.el-dropdown-selfdefine'"
+#用户注销按钮
+user_logout: "By.CSS_SELECTOR, '.el-dropdown-menu__item--divided'"
+#修改管理员密码按钮
+change_pass: "By.XPATH, '//li[text()=\"修改密码\"]'"
+#旧密码输入框
+lod_pass: "By.CSS_SELECTOR, 'input[type=\"password\"]', 0"
+#新密码输入框
+new_pass: "By.CSS_SELECTOR, 'input[type=\"password\"]', 1"
+#确认密码输入框
+confirm_pass: "By.CSS_SELECTOR, 'input[type=\"password\"]', 2"
+#确认修改密码按钮
+confirm_change: "By.CSS_SELECTOR, 'div[aria-label=\"修改密码\"] .el-button--primary'"
+#登陆页元素
+user_login_false: "By.CSS_SELECTOR, '.title'"
+
+click_data: "By.XPATH, '//div[text()=\"数据管理\"]'"
+click_user_data: "By.CSS_SELECTOR, 'li.is-opened ul.el-menu--inline'"
+click_file: "By.XPATH, '//div[text()=\"Petrel \"]'"
+upload: "By.XPATH, '//button/span[text()=\"上传\"]'"
+click_upload: "By.CSS_SELECTOR, '#inputUpload'"
+confirm: "By.CSS_SELECTOR, 'div[aria-label=\"上传\"] button.el-button--primary span'"
+confirm_upload: "By.CSS_SELECTOR, 'div.el-message-box__btns button.el-button--primary'"

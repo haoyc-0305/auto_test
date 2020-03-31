@@ -1,0 +1,104 @@
+#组织管理按钮
+organization_manage: "By.XPATH, '//div[text()=\"组织管理\"]'"
+#域管理按钮
+domain_manage: "By.XPATH, '//li[text()=\"域管理 \"]'"
+#域管理页面
+domain_text: "By.CSS_SELECTOR, '.h3_title'"
+#新建域按钮
+domain_new: "By.XPATH, '//span[text()=\"新建\"]', 0"
+#域名输入框
+domain_name: "By.CSS_SELECTOR, 'div.newDomain-top div.el-input input[placeholder=\"请输入内容\"]'"
+#域类型下拉框
+domain_class: "By.CSS_SELECTOR, 'div.newDomain-top div.el-input input[readonly=\"readonly\"]'"
+#AD域类型
+domain_ad: "By.XPATH, '//span[text()=\"AD\"]'"
+#NIS域类型
+domain_nis: "By.XPATH, '//span[text()=\"NIS\"]'"
+#域IP输入框
+domain_master_ip: "By.CSS_SELECTOR, 'div.newDomain-left input[type=\"text\"]', 0"
+#域用户名输入框
+system_name: "By.CSS_SELECTOR, 'div.newDomain-left input[type=\"text\"]', 1"
+#域用户密码输入框
+system_pass: "By.CSS_SELECTOR, 'div.newDomain-left input[type=\"password\"]'"
+#从域IP输入框
+domain_slave_ip: "By.CSS_SELECTOR, 'div.newDomain-right input'"
+#域描述输入框
+domain_describe: "By.CSS_SELECTOR, 'div.newDomain-right textarea'"
+#新建域确认按钮
+domain_confirm: "By.CSS_SELECTOR, 'footer[style] button.el-button--primary span'"
+#新建域取消按钮
+domain_cancel: "By.CSS_SELECTOR, 'footer[style] button.el-button--default span'"
+#域名1
+domain_ad_loc: "By.XPATH,'//p[text()=\"yxsd.oraclead.com\"]'"
+#域名2
+domain_nis_loc: "By.XPATH,'//p[text()=\"auto.com\"]'"
+#编辑域按钮
+domain_edit: "By.XPATH, '//span[text()=\"编辑\"]"
+#编辑域描述输入框
+input_describe: "By.CSS_SELECTOR, 'textarea.el-textarea__inner'"
+#编辑域确认按钮
+domain_edit_confirm: "By.CSS_SELECTOR, 'footer button.el-button--primary'"
+#域描述信息显示框
+describe_loc: "By.XPATH, '//div[text()=\"域描述已修改\"]'"
+#新建域用户按钮
+system_user_new: "By.XPATH, '//span[text()=\"新建\"]', 1"
+#新建域用户名输入框
+system_user_name: "By.CSS_SELECTOR, 'div.newuserdialog input.el-input__inner', 0"
+#新建域用户密码输入框
+system_user_pass0: "By.CSS_SELECTOR, 'div.newuserdialog input.el-input__inner', 1"
+#新建域用户ID输入框
+system_user_id: "By.CSS_SELECTOR, 'div.newuserdialog input.el-input__inner', 2"
+#新建域用户组ID输入框
+system_user_group_id: "By.CSS_SELECTOR, 'div.newuserdialog input.el-input__inner', 3"
+#新建域用户家目录输入框
+system_user_home: "By.CSS_SELECTOR, 'div.newuserdialog input.el-input__inner', 4"
+#新建域用户描述输入框
+system_user_describe: "By.CSS_SELECTOR, 'div.newUserfloat textarea.el-textarea__inner'"
+#新建域用户确认按钮
+system_user_confirm: "By.CSS_SELECTOR, 'footer.newUserfloat button.el-button--primary'"
+#用户名显示框
+user_name_loc: "By.CSS_SELECTOR, '.DomainManagement td div.el-tooltip', 0"
+#下载导入模板按钮
+download_file: "By.XPATH, '//span[text()=\"下载导入模板\"]'"
+#导入按钮
+upload_file: "By.XPATH, '//span[text()=\"导入\"]'"
+#同步用户按钮
+loading_user: "By.XPATH, '//span[text()=\"同步\"]'"
+#用户列表数
+user_number: "By.CSS_SELECTOR, '#filedtable tr.el-table__row'"
+#选中移除用户
+remove_select_user: "By.CSS_SELECTOR, '#filedtable th.el-table-column--selection label span.el-checkbox__input'"
+#移除按钮
+remove_user: "By.XPATH, '//span[text()=\"移除\"]'"
+#域用户统计
+user_statistical: "By.CSS_SELECTOR, 'span.el-pagination__total'"
+#还原按钮
+reduction_user: "By.XPATH, '//span[text()=\"还原\"]'"
+#选中还原用户
+reduction_select: "By.CSS_SELECTOR, '.el-dialog div.el-table__header-wrapper th.el-table-column--selection label span.el-checkbox__input'"
+#确认还原
+restore_confirm: "By.CSS_SELECTOR, '.el-form-item__content button.el-button--primary'"
+# 导出
+export_user: "By.XPATH, '//span[text()=\"导出\"]'"
+#搜索输入框
+find_input_user: "By.CSS_SELECTOR, '.DomainManagement input[placeholder=\"请输入搜索内容\"]'"
+#搜索按钮
+find_click: "By.CSS_SELECTOR, '.DomainManagement div.el-input--suffix button'"
+#修改密码按钮
+edit_pass: "By.XPATH, '//button/span[text()=\"修改密码\"]'"
+#密码输入框一
+input_pass0: "By.CSS_SELECTOR, 'input[placeholder=\"输入密码\"]', 0"
+#密码输入框二
+input_pass1: "By.CSS_SELECTOR, 'input[placeholder=\"输入密码\"]', 1"
+#确定修改密码
+confirm_pass: "By.CSS_SELECTOR, 'footer button.el-button--primary'"
+#删除域用户按钮
+delete_user: "By.XPATH, '//span[text()=\"删除\"]', 1"
+#移除删除同步确定按钮
+confirm: "By.CSS_SELECTOR, '.el-message-box__btns button.el-button--primary'"
+#选中所有域
+select_all_domain: "By.CSS_SELECTOR, '.el-table thead label', 0"
+#删除域按钮
+domain_delete: "By.XPATH, '//span[text()=\"删除\"]', 0"
+#域列表
+domain_list: "By.CSS_SELECTOR, 'div[class=\"el-table el-table--fit el-table--border el-table--enable-row-hover el-table--enable-row-transition\"] tr.el-table__row'"

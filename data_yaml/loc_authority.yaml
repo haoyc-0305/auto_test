@@ -1,0 +1,39 @@
+#组织管理按钮
+organization_manage: "By.XPATH, '//div[text()=\"组织管理\"]'"
+#职权管理按钮
+authority_manage: "By.XPATH, '//li[text()=\"职权管理 \"]'"
+#创建职权
+authority_create: "By.XPATH, '//span[text()=\"新建\"]', 0"
+#职权名称输入框
+authority_input_name: "By.CSS_SELECTOR, '.el-dialog input'"
+#新建确定按钮
+authority_confirm: "By.CSS_SELECTOR, '.el-dialog__body button.el-button--primary'"
+#测试职权名称
+test_authority_name: "By.XPATH, '//span[text()=\"新建职权测试 (0)\"]'"
+#应用管理员职权名称
+app_authority_name: "By.XPATH, '//span[text()=\"应用管理员 (0)\"]'"
+#设备管理员职权名称
+device_authority_name: "By.XPATH, '//span[text()=\"设备管理员 (0)\"]'"
+#系统管理员职权名称
+system_authority_name: "By.XPATH, '//span[text()=\"系统管理员 (0)\"]'"
+#所有权限
+powers_all: "By.CSS_SELECTOR, 'div[style=\"padding-left: 0px;\"] span.el-checkbox__input'"
+#权限确认
+powers_confirm: "By.XPATH, '//div/button/span[text()=\"确定\"]', 0"
+#判断新增权限
+authorization_success: "By.CSS_SELECTOR, 'div[style=\"padding-left: 0px;\"] span.el-checkbox__input input'"
+#添加职权用户按钮
+authority_add_user: "By.XPATH, '//span[text()=\"新建\"]', 1"
+#选中职权用户
+rank_select: "By.XPATH, '//span[text()=\"测试组\"]'"
+#判断添加用户
+authority_add_name: "By.XPATH, '//span[text()=\"系统管理员(2)\"]'"
+#选中移除用户
+authority_del_user_select0: "By.CSS_SELECTOR, '.content label.el-checkbox span.el-checkbox__label', 0"
+authority_del_user_select1: "By.CSS_SELECTOR, '.content label.el-checkbox span.el-checkbox__label', 1"
+#确认移除用户
+authority_del_user_confirm: "By.XPATH, '//span[text()=\"删除\"]', 1"
+#删除职权
+authority_del: "By.XPATH, '//span[text()=\"删除\"]', 0"
+#确认删除职权
+authority_del_confirm: "By.CSS_SELECTOR, '.el-message-box button.el-button--primary'"

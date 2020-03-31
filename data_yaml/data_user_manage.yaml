@@ -1,0 +1,51 @@
+#职级名称
+test_create_rank: "职级测试"
+#新建局级部门
+test_create_juji:
+  - "月新时代"
+  - "yxsd.com"
+  - "1"
+#新建处级部门
+test_create_chuji:
+  - "云应用"
+  - "2"
+#新建科科部门
+test_create_keji:
+  - "测试"
+  - "3"
+#编辑局级部门
+test_edit_juji:
+  - "北京月新时代科技股份有限公司"
+  - "yxsd.com.cn"
+#编辑科级部门
+test_edit_keji: "云应用事业部"
+#编辑处级部门
+test_edit_chuji: "测试组"
+#删除局级
+test_delete_juji:
+  - "北京月新时代科技股份有限公司"
+  - "0"
+#删除处级
+test_delete_chuji:
+  - "云应用事业部"
+  - "1"
+#删除科级
+test_delete_keji:
+  - "测试组"
+  - "2"
+#新建用户信息
+test_user_create:
+  user_name: "haoyc00"
+  name: "郝彦超00"
+  ip: "192.168.1.100"
+  mac: "00:50:56:93:1d:8a"
+  tel: "01088888880"
+  mobile: "15911141100"
+#下载导入模板
+download_name: "user_template.xls"
+#导入模版
+import_name: "导入平台用户模板.xls"
+#导出用户文件：、
+user_export: "user.xls"
+#修改密码
+test_user_change_pass: "222222"

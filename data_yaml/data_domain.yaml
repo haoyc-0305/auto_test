@@ -1,0 +1,20 @@
+test_new_ad:
+  - "yxsd.oraclead.com"
+  - "10.1.1.41"
+  - "administrator"
+  - "P@ssw0rd"
+  - "10.1.1.42"
+test_new_nis:
+  - "auto.com"
+  - "10.1.1.37"
+  - "root"
+  - "rootroot"
+  - "10.1.1.38"
+test_add_user:
+  - "haoyc05"
+  - "P@ssw0rd"
+  - "6005"
+  - "/home"
+download_file_name: "system_user_template.xls"
+import_file: "导入域用户模板.xls"
+export_file_name: "system_user.xls"
