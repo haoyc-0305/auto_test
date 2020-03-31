@@ -4,8 +4,10 @@ import win32gui
 from time import sleep
 import win32con
 from selenium.webdriver import ActionChains
-
-image_file = "C:\\Program Files\\JetBrains\\cloud_test\\image_file\\"
+from base_file.base_file_route import image_path, download_path, upload_path
+image = image_path()
+download = download_path()
+upload = upload_path()
 
 
 class Method:
@@ -50,7 +52,7 @@ class Method:
         except:
             is_true = False
             new_time = time.strftime("%Y-%m-%d_%H-%M-%S")
-            self.driver.get_screenshot_as_file(image_file + "%s%s.png" % (new_time, text))
+            self.driver.get_screenshot_as_file(image + "%s%s.png" % (new_time, text))
         print("%s:" % text, is_true)
 
     # 判断元素不存在
@@ -60,7 +62,7 @@ class Method:
             self.find_element(loc)
             is_true = False
             new_time = time.strftime("%Y-%m-%d_%H-%M-%S")
-            self.driver.get_screenshot_as_file(image_file + "%s%s.png" % (new_time, text))
+            self.driver.get_screenshot_as_file(image + "%s%s.png" % (new_time, text))
         except:
             is_true = True
         print("%s:" % text, is_true)
@@ -74,7 +76,7 @@ class Method:
             assert is_true
         except:
             new_time = time.strftime("%Y-%m-%d_%H-%M-%S")
-            self.driver.get_screenshot_as_file(image_file + "%s%s.png" % (new_time, text))
+            self.driver.get_screenshot_as_file(image + "%s%s.png" % (new_time, text))
 
     # 判断元素未选中
     def selected_false(self, loc, text):
@@ -85,7 +87,7 @@ class Method:
             assert not is_true
         except:
             new_time = time.strftime("%Y-%m-%d_%H-%M-%S")
-            self.driver.get_screenshot_as_file(image_file + "%s%s.png" % (new_time, text))
+            self.driver.get_screenshot_as_file(image + "%s%s.png" % (new_time, text))
 
     # 通过元素数量判断
     def element_number(self, loc, number, text):
@@ -98,7 +100,7 @@ class Method:
             assert len(number_element) == int(number)
         except:
             new_time = time.strftime("%Y-%m-%d_%H-%M-%S")
-            self.driver.get_screenshot_as_file(image_file + "%s%s.png" % (new_time, text))
+            self.driver.get_screenshot_as_file(image + "%s%s.png" % (new_time, text))
 
     # 通过元素文本相等判断
     def text_element(self, loc, text, text_name):
@@ -109,7 +111,7 @@ class Method:
             assert get_text == text
         except:
             new_time = time.strftime("%Y-%m-%d_%H-%M-%S")
-            self.driver.get_screenshot_as_file(image_file + "%s%s.png" % (new_time, text_name))
+            self.driver.get_screenshot_as_file(image + "%s%s.png" % (new_time, text_name))
 
     # 通过元素文本不相等判断
     def not_text_element(self, loc, text, text_name):
@@ -120,11 +122,10 @@ class Method:
             assert get_text != text
         except:
             new_time = time.strftime("%Y-%m-%d_%H-%M-%S")
-            self.driver.get_screenshot_as_file(image_file + "%s%s.png" % (new_time, text_name))
+            self.driver.get_screenshot_as_file(image + "%s%s.png" % (new_time, text_name))
 
     # 判断文件是否下载成功
     def file_find(self, name):
-        file_route = "C:\\Users\\Administrator\\Downloads"
         # if "chrome" in str(self.driver):
         #     file_route = "C:\\Users\\Hao\\Downloads\\Google"
         # elif "firefox" in str(self.driver):
@@ -132,7 +133,7 @@ class Method:
         # elif"ie" in str(self.driver):
         #     file_route = "C:\\Users\\Hao\\Downloads\\IE"
         sleep(5)
-        a = os.walk(file_route)
+        a = os.walk(download)
         for file_list in a:
             b = 0
             for file_name in file_list[2]:
@@ -144,22 +145,19 @@ class Method:
                 break
             if b == 0:
                 new_time = time.strftime("%Y-%m-%d_%H-%M-%S")
-                self.driver.get_screenshot_as_file(image_file + "%s%s.png" % (new_time, name))
+                self.driver.get_screenshot_as_file(image + "%s%s.png" % (new_time, name))
                 break
 
     # 上传文件
     def file_upload(self, file_name):
         loc_name = None
-        file_route = None
+        file_path = upload + file_name
         if "chrome" in str(self.driver):
             loc_name = "打开"
-            file_route = "C:\\Users\\Administrator\\Downloads\\Chrome_down\\%s" % file_name
         elif "firefox" in str(self.driver):
             loc_name = "文件上传"
-            file_route = "C:\\Users\\Hao\\Downloads\\Firefox\\%s" % file_name
         elif"ie" in str(self.driver):
             loc_name = "选择要加载的文件"
-            file_route = "C:\\Users\\Hao\\Downloads\\IE11\\%s" % file_name
         sleep(2)
         # 一级顶层窗口，此处title为上传窗口名称，浏览器不一样上传窗口名称不一样
         dialog = win32gui.FindWindow("#32770", loc_name)
@@ -171,7 +169,7 @@ class Method:
         edit = win32gui.FindWindowEx(ComboBox, 0, 'Edit', None)
         button = win32gui.FindWindowEx(dialog, 0, 'Button', "打开(&O)")
         # 执行操作 输入文件路径
-        win32gui.SendMessage(edit, win32con.WM_SETTEXT, None, file_route)
+        win32gui.SendMessage(edit, win32con.WM_SETTEXT, None, file_path)
         # 点击打开上传文件
         win32gui.SendMessage(dialog, win32con.WM_COMMAND, 1, button)
         sleep(10)
