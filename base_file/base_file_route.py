@@ -17,3 +17,8 @@ def download_path():
 def upload_path():
     path = "C:\\Users\\Administrator\\Downloads\\Chrome_down\\"
     return path
+
+# 数据库连接信息
+def database():
+    tns = "cloud/cloud@10.1.1.37:1521/cloud"
+    return tns

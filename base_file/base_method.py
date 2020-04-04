@@ -1,13 +1,15 @@
+import cx_Oracle
 import os
 import time
 import win32gui
 from time import sleep
 import win32con
 from selenium.webdriver import ActionChains
-from base_file.base_file_route import image_path, download_path, upload_path
+from base_file.base_file_route import image_path, download_path, upload_path, database
 image = image_path()
 download = download_path()
 upload = upload_path()
+tns = database()
 
 
 class Method:
@@ -124,14 +126,27 @@ class Method:
             new_time = time.strftime("%Y-%m-%d_%H-%M-%S")
             self.driver.get_screenshot_as_file(image + "%s%s.png" % (new_time, text_name))
 
+    # 数据库操作
+    def data_run(self, statements):
+        db = cx_Oracle.connect(tns)
+        cr = db.cursor()
+        for sql in statements:
+            try:
+                cr.execute(sql)
+            except:
+                print("【%s】执行失败！" % sql)
+                break
+            if "select" in sql or "SELECT" in sql:
+                value = cr.fetchall()[0]
+                print("【数据列表总计：%s】" % value[0])
+                return value[0]
+            else:
+                db.commit()
+        cr.close()
+        db.close()
+
     # 判断文件是否下载成功
     def file_find(self, name):
-        # if "chrome" in str(self.driver):
-        #     file_route = "C:\\Users\\Hao\\Downloads\\Google"
-        # elif "firefox" in str(self.driver):
-        #     file_route = "C:\\Users\\Hao\\Downloads\\Firefox"
-        # elif"ie" in str(self.driver):
-        #     file_route = "C:\\Users\\Hao\\Downloads\\IE"
         sleep(5)
         a = os.walk(download)
         for file_list in a:
