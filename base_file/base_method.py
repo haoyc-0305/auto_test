@@ -1,4 +1,5 @@
 import cx_Oracle
+import pymysql
 import os
 import time
 import win32gui
@@ -9,8 +10,8 @@ from base_file.base_file_route import image_path, download_path, upload_path, da
 image = image_path()
 download = download_path()
 upload = upload_path()
-tns = database()
-
+oracle = database()["oracle"]
+mysql = database()["mysql"]
 
 class Method:
 
@@ -127,21 +128,27 @@ class Method:
             self.driver.get_screenshot_as_file(image + "%s%s.png" % (new_time, text_name))
 
     # 数据库操作
-    def data_run(self, statements):
-        db = cx_Oracle.connect(tns)
+    def data_run(self, statements, db_type=None):
+        db = cx_Oracle.connect(oracle)
+        if db_type is not None:
+            db = pymysql.connect(host=mysql[0], port=int(mysql[1]), user=mysql[2], passwd=mysql[3], db=mysql[4], charset='utf8')
         cr = db.cursor()
         for sql in statements:
             try:
+                if isinstance(statements, str):
+                    sql = statements
                 cr.execute(sql)
+                if "select" in sql or "SELECT" in sql:
+                    value = cr.fetchall()[0]
+                    print("【数据列表总计：%s】" % value[0])
+                    return value[0]
+                else:
+                    db.commit()
+                if isinstance(statements, str):
+                    break
             except:
                 print("【%s】执行失败！" % sql)
                 break
-            if "select" in sql or "SELECT" in sql:
-                value = cr.fetchall()[0]
-                print("【数据列表总计：%s】" % value[0])
-                return value[0]
-            else:
-                db.commit()
         cr.close()
         db.close()
 

@@ -20,5 +20,6 @@ def upload_path():
 
 # 数据库连接信息
 def database():
-    tns = "cloud/cloud@10.1.1.37:1521/cloud"
+    tns = {"oracle": "cloud/cloud@10.1.1.37:1521/cloud",
+           "mysql": ["10.1.1.36", "3306", "root", "111111", "cloud2"]}
     return tns
