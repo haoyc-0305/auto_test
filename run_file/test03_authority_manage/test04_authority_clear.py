@@ -24,7 +24,7 @@ class TestAuthority:
 
     # 清空权限
     def test_create_authority(self, text="【权限清空】"):
-        self.auth.click_text_authority_name()
+        self.auth.click_test_authority_name()
         self.auth.click_powers_all()
         self.auth.click_powers_confirm()
         self.auth.selected_false(authority_manage.loc("authorization_success"), text)

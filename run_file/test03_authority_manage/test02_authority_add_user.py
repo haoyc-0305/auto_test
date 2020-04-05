@@ -25,7 +25,7 @@ class TestAuthority:
     # 添加职权用户
     def test_create_authority(self, text="【添加职权用户】"):
         # 添加测试用户
-        self.auth.click_text_authority_name(clear=1)
+        self.auth.click_test_authority_name(clear=1)
         self.auth.click_authority_add_user()
         self.auth.click_authority_user_name()
         self.auth.click_confirm_select()

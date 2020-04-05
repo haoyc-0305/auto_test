@@ -31,8 +31,8 @@ class AuthorityManage(Method):
         self.click_element(loc("authority_confirm"))
 
     # 选择测试职权
-    def click_text_authority_name(self, clear=None):
-        self.click_element(loc("text_authority_name"), clear)
+    def click_test_authority_name(self, clear=None):
+        self.click_element(loc("test_authority_name"), clear)
 
     # 选中应用管理员
     def click_app_authority_name(self, clear=None):
@@ -73,8 +73,7 @@ class AuthorityManage(Method):
 
     # 选择移除用户
     def click_authority_del_user_select(self):
-        self.click_element(loc("authority_del_user_select0"))
-        self.click_element(loc("authority_del_user_select1"))
+        self.click_element(loc("authority_del_user_select"))
 
     # 确认移除
     def click_authority_del_user_confirm(self):

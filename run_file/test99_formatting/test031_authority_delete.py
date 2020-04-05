@@ -24,10 +24,10 @@ class TestAuthority:
 
     # 删除职权
     def test_create_authority(self, authority_name=data("test_auto_name")):
-        self.auth.click_text_authority_name()
+        self.auth.click_test_authority_name()
         self.auth.click_authority_del()
         self.auth.click_authority_del_confirm()
-        self.auth.displayed_false(authority_manage.loc("authority_name"), "删除职权【%s】" % authority_name)
+        self.auth.displayed_false(authority_manage.loc("test_authority_name"), "删除职权【%s】" % authority_name)
 
 
 if __name__ == '__main__':

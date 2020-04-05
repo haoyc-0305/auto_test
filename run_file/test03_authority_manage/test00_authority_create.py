@@ -27,7 +27,7 @@ class TestAuthority:
         self.auth.click_authority_create()
         self.auth.input_authority_name(authority_name)
         self.auth.click_confirm_authority()
-        self.auth.displayed_true(authority_manage.loc("authority_name"), "创建职权【%s】" % authority_name)
+        self.auth.displayed_true(authority_manage.loc("test_authority_name"), "创建职权【%s】" % authority_name)
 
 
 if __name__ == '__main__':

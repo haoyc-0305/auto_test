@@ -27,10 +27,9 @@ authority_add_user: "By.XPATH, '//span[text()=\"新建\"]', 1"
 #选中职权用户
 rank_select: "By.XPATH, '//span[text()=\"测试组\"]'"
 #判断添加用户
-authority_add_name: "By.XPATH, '//span[text()=\"系统管理员(2)\"]'"
+authority_add_name: "By.XPATH, '//span[text()=\"新建职权测试 (1)\"]'"
 #选中移除用户
-authority_del_user_select0: "By.CSS_SELECTOR, '.content label.el-checkbox span.el-checkbox__label', 0"
-authority_del_user_select1: "By.CSS_SELECTOR, '.content label.el-checkbox span.el-checkbox__label', 1"
+authority_del_user_select: "By.CSS_SELECTOR, '.content label.el-checkbox span.el-checkbox__label'"
 #确认移除用户
 authority_del_user_confirm: "By.XPATH, '//span[text()=\"删除\"]', 1"
 #删除职权

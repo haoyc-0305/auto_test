@@ -140,7 +140,7 @@ class Method:
                 cr.execute(sql)
                 if "select" in sql or "SELECT" in sql:
                     value = cr.fetchall()[0]
-                    print("【数据列表总计：%s】" % value[0])
+                    print("【数据库返回：%s】" % value[0])
                     return value[0]
                 else:
                     db.commit()

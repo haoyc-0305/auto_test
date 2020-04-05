@@ -1,6 +1,6 @@
 # 图片保存路径
 def image_path():
-    path = "C:\\Program Files\\JetBrains\\cloud_test\\data_yaml\\"
+    path = "C:\\Program Files\\JetBrains\\cloud_test\\image_file\\"
     return path
 
 # YAML文件路径

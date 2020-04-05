@@ -1,0 +1,1 @@
+admin_pass: "SELECT \"password\" FROM \"user\" WHERE \"user_name\" = 'admin'"

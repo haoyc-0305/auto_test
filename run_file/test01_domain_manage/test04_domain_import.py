@@ -29,11 +29,11 @@ class TestDomain:
         self.domain.file_find(data("download_file_name"))
 
     # 导入模板
-    # def test_find_upload(self, file_name=data("import_file"), text="【导入域用户】"):
-    #     user_text = self.domain.get_text(domain_manage.loc("user_statistical"))
-    #     self.domain.upload_file()
-    #     self.domain.file_upload(file_name)
-    #     self.domain.not_text_element(domain_manage.loc("user_statistical"), user_text, text)
+    def test_find_upload(self, file_name=data("import_file"), text="【导入域用户】"):
+        user_text = self.domain.get_text(domain_manage.loc("user_statistical"))
+        self.domain.upload_file()
+        self.domain.file_upload(file_name)
+        self.domain.not_text_element(domain_manage.loc("user_statistical"), user_text, text)
 
 
 if __name__ == '__main__':

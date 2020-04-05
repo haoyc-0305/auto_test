@@ -4,7 +4,7 @@ import pytest
 from base_file.base_driver import setup, login
 from conf_file import domain_manage
 from base_file.base_yaml import data_yaml
-
+from time import sleep
 
 def data(key):
     return data_yaml("data_domain")[key]
@@ -32,6 +32,7 @@ class TestDomain:
         self.domain.click_delete_user()
         self.domain.click_confirm()
         self.domain.click_confirm()
+        sleep(10)
         self.domain.not_text_element(domain_manage.loc("user_statistical"), user_text, text)
 
     # 清空域用户表

@@ -24,7 +24,7 @@ class TestAuthority:
 
     # 添加权限
     def test_create_authority(self, text="【权限添加】"):
-        self.auth.click_text_authority_name()
+        self.auth.click_test_authority_name()
         self.auth.click_powers_all()
         self.auth.click_powers_confirm()
         self.auth.selected_true(authority_manage.loc("authorization_success"), text)

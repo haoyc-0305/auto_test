@@ -27,7 +27,7 @@ class TestAuthority:
         self.auth.click_authority_del_select()
         self.auth.click_authority_del_user_select()
         self.auth.click_authority_del_user_confirm()
-        self.auth.displayed_true(authority_manage.loc("authority_name"), text)
+        self.auth.displayed_true(authority_manage.loc("test_authority_name"), text)
 
 
 if __name__ == '__main__':
