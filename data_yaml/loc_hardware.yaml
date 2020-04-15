@@ -1,0 +1,60 @@
+#资源管理
+resource_manage: "By.XPATH, '//div[text()=\"资源管理\"]'"
+#硬件资源管理
+hardware_manage: "By.XPATH, '//li[text()=\"硬件资源管理 \"]'"
+#新建硬件资源
+new_hardware: "By.XPATH, '//span[text()=\"新建\"]'"
+#系统类型
+system_type: "By.CSS_SELECTOR, '.el-form--label-right div[class=\"el-input el-input--suffix\"] input', 0"
+#系统类型-Linux
+system_linux: "By.XPATH, '//span[text()=\"Linux\"]'"
+#系统类型-Windows
+system_windows: "By.XPATH, '//span[text()=\"Windows\"]'"
+#系统类型-WindowsServer
+system_windows_server: "By.XPATH, '//span[text()=\"WindowsServer\"]'"
+#设备类型
+type: "By.CSS_SELECTOR, '.el-form--label-right div[class=\"el-input el-input--suffix\"] input', 1"
+#图形节点/虚机
+gui_vm: "By.XPATH, '//span[text()=\"图形节点/虚机\"]'"
+#计算节点/虚机
+calculate_vm: "By.XPATH, '//span[text()=\"计算节点/虚机\"]'"
+#外网IP
+out_ip: "By.CSS_SELECTOR, '.el-form--label-right div[class=\"f2 el-input el-input--suffix\"] input', 0"
+#内网IP
+in_ip: "By.CSS_SELECTOR, '.el-form--label-right div[class=\"f2 el-input el-input--suffix\"] input', 1"
+#描述
+describe: "By.CSS_SELECTOR, '.el-form--label-right div[class=\"el-form-item__content\"] textarea'"
+#品牌
+brand: "By.CSS_SELECTOR, '.el-form--label-right div[class=\"el-input el-input--suffix\"] input', 2"
+#品牌-华为
+huawei: "By.XPATH, '//span[text()=\"华为\"]'"
+#品牌-联想
+lenovo: "By.XPATH, '//span[text()=\"联想\"]'"
+#型号
+model: "By.CSS_SELECTOR, '.el-form--label-right div[class=\"f2 el-input el-input--suffix\"] input', 2"
+#序号
+sn: "By.CSS_SELECTOR, '.el-form--label-right div[class=\"f2 el-input el-input--suffix\"] input', 3"
+#购买时间
+time: "By.CSS_SELECTOR, '.el-form--label-right div.el-date-editor--datetime input'"
+#选择时间（此刻）
+now: "By.CSS_SELECTOR, '.has-time div.el-picker-panel__footer button.el-button--text'"
+#资产编号
+asset_num: "By.CSS_SELECTOR, '.el-form--label-right div[class=\"f2 el-input el-input--suffix\"] input', 4"
+#保修期
+warranty_time: "By.CSS_SELECTOR, '.el-form--label-right div[class=\"el-input el-input--suffix\"] input', 3"
+#保修期-2年
+two_years_warranty: "By.XPATH, '//span[text()=\"2年\"]'"
+#产权单位
+subordinate_units: "By.CSS_SELECTOR, '.el-form--label-right div[class=\"el-input el-input--suffix\"] input', 4"
+#产权单位-局级
+unit_juji: "By.CSS_SELECTOR, '.el-cascader__dropdown span.el-radio__inner'"
+#收起产权单位列表
+shutdown_unit_list: "By.CSS_SELECTOR, 'div.is-focus'"
+#设备管理员
+device_manager: "By.CSS_SELECTOR, '.el-form--label-right div[class=\"el-input el-input--suffix\"] input', 5"
+#设备管理员-haoyc00
+device_haoyc00: "By.XPATH, '//span[text()=\"haoyc00\"]'"
+#确定按钮
+confrim: "By.XPATH, '//footer/button/span[text()=\"确定\"]'"
+#获取设备数量
+device_number: "By.CSS_SELECTOR, '.is-background span.el-pagination__total'"
