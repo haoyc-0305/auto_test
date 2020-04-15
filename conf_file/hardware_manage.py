@@ -120,3 +120,48 @@ class HardwareManage(Method):
     # 确定创建
     def click_confirm(self):
         self.click_element(loc("confrim"))
+
+    # 编辑硬件
+    def click_edit_hardware(self):
+        self.click_element(loc("edit_hardware"))
+
+    # 选中所有设备
+    def click_select_all(self):
+        self.click_element(loc("select_all"))
+
+    # 更新设备
+    def click_update_hardware(self):
+        self.click_element(loc("update_hardware"))
+
+    # 确认更新
+    def click_update_confirm(self):
+        self.click_element(loc("update_confirm"))
+
+    # 下载模版文件
+    def click_download_file(self):
+        self.click_element(loc("download_file"))
+
+    # 导入
+    def click_upload_file(self):
+        self.click_element(loc("upload_file"))
+
+    # 导出
+    def click_export_file(self):
+        self.click_element(loc("export_file"))
+
+    # 搜索
+    def input_search_input(self, text):
+        self.input_text(loc("search_input"), text)
+        self.click_element(loc("search_button"))
+
+    # 停用
+    def click_block_up(self):
+        self.click_element(loc("block_up"))
+
+    # 启用
+    def click_start(self):
+        self.click_element(loc("start"))
+
+    # 删除
+    def click_delete(self):
+        self.click_element(loc("delete"))

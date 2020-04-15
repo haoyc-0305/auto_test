@@ -1,8 +1,10 @@
+#01打开硬件资源管理
 #资源管理
 resource_manage: "By.XPATH, '//div[text()=\"资源管理\"]'"
 #硬件资源管理
 hardware_manage: "By.XPATH, '//li[text()=\"硬件资源管理 \"]'"
-#新建硬件资源
+#02新建硬件
+#新建
 new_hardware: "By.XPATH, '//span[text()=\"新建\"]'"
 #系统类型
 system_type: "By.CSS_SELECTOR, '.el-form--label-right div[class=\"el-input el-input--suffix\"] input', 0"
@@ -58,3 +60,33 @@ device_haoyc00: "By.XPATH, '//span[text()=\"haoyc00\"]'"
 confrim: "By.XPATH, '//footer/button/span[text()=\"确定\"]'"
 #获取设备数量
 device_number: "By.CSS_SELECTOR, '.is-background span.el-pagination__total'"
+#03编辑设备
+#编辑硬件
+edit_hardware: "By.CSS_SELECTOR, '.el-table__row td.is-center p'"
+#设备备注信息
+describe_text: "By.XPATH, '//div[text()=\"编辑硬件资源\"]'"
+#04更新设备信息
+#选中全部设备
+select_all: "By.CSS_SELECTOR, '.el-table__header-wrapper span.el-checkbox__inner'"
+#更新按钮
+update_hardware: "By.XPATH, '//span[text()=\"更新\"]'"
+#确认更新：
+update_confirm: "By.CSS_SELECTOR, '.el-message-box__btns button.el-button--primary'"
+#MAC地址
+mac_text: "By.XPATH, '//div[text()=\"222\"]'"
+#05下载模版/导入模版/导出模版
+download_file: "By.XPATH, '//span[text()=\"下载导入模板\"]'"
+#导入模版
+upload_file: "By.XPATH, '//span[text()=\"导入\"]'"
+#导出模版
+export_file: "By.XPATH, '//span[text()=\"导出\"]'"
+#搜索输入框
+search_input: "By.CSS_SELECTOR, '.top input[type=\"text\"]'"
+#搜索按钮
+search_button: "By.XPATH, '//span[text()=\"搜索\"]'"
+#停用
+block_up: "By.XPATH, '//span[text()=\"停用\"]'"
+#启用
+start: "By.XPATH, '//span[text()=\"启用\"]'"
+#删除按钮
+delete: "By.XPATH, '//span[text()=\"删除\"]'"

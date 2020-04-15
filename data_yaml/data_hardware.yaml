@@ -1,4 +1,15 @@
+#新建设备信息
 hardware_parameters:
+  -
+    system_type: "linux"
+    type: "计算"
+    out_ip: "10.1.1.42"
+    in_ip: "192.168.1.42"
+    describe: "vnc"
+    brand: "华为"
+    model: "vnc-42"
+    sn: "101142"
+    asset_num: "vnc42"
   -
     system_type: "linux"
     type: "计算"
@@ -20,16 +31,6 @@ hardware_parameters:
     sn: "101146"
     asset_num: "dcv201946"
   -
-    system_type: "linux"
-    type: "计算"
-    out_ip: "10.1.1.42"
-    in_ip: "192.168.1.42"
-    describe: "vnc"
-    brand: "华为"
-    model: "vnc-42"
-    sn: "101142"
-    asset_num: "vnc42"
-  -
     system_type: "windows"
     type: "图形"
     out_ip: "10.1.1.47"
@@ -39,3 +40,15 @@ hardware_parameters:
     model: "horizon-47"
     sn: "101147"
     asset_num: "horizon47"
+#编辑设备描述信息
+edit_hardware: "编辑硬件资源"
+#修改设备MAC地址
+sql: 'UPDATE "hardware" SET "extranetmacip"=222'
+#下载模版名称
+download_file: "equipment_Template.xls"
+#导入模版名称
+upload_file: "硬件设备导入.xls"
+#导出模版名称
+export_file: "equipment.xls"
+#搜索设备IP
+search_name: "vnc42"

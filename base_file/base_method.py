@@ -160,7 +160,7 @@ class Method:
             b = 0
             for file_name in file_list[2]:
                 if name in file_name:
-                    print("下载【 %s】:" % name, name == file_name)
+                    print("下载【%s】:" % name, name == file_name)
                     b += 1
                     break
             if b == 1:
