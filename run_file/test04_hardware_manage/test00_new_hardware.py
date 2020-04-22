@@ -27,6 +27,7 @@ class TestHardware:
     # 新建硬件设备.
     @pytest.mark.parametrize("parameters", data("hardware_parameters"))
     def test_new_linux_hardware(self, parameters):
+        self.driver.refresh()
         device_number = self.hardware.get_text(hardware_manage.loc("device_number"))
         self.hardware.click_new_hardware()
         self.hardware.click_system_type()
@@ -49,7 +50,7 @@ class TestHardware:
         self.hardware.click_unit_juji()
         self.hardware.click_shutdown_unit_list()
         self.hardware.click_device_manager()
-        self.hardware.click_device_haoyc00()
+        self.hardware.click_device_admin()
         self.hardware.click_confirm()
         sleep(5)
         self.hardware.not_text_element(hardware_manage.loc("device_number"), device_number, "添加设备【%s】"

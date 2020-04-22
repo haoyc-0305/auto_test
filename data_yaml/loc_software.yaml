@@ -1,0 +1,133 @@
+#01打开硬件资源管理
+#资源管理
+resource_manage: "By.XPATH, '//div[text()=\"资源管理\"]'"
+#硬件资源管理
+hardware_manage: "By.XPATH, '//li[text()=\"软件资源管理 \"]'"
+#02新建软件
+#新建
+new_soft: "By.XPATH, '//button/span[text()=\"新建\"]'"
+#名称
+new_soft_name: "By.CSS_SELECTOR, '.el-form--label-right div.selected  input', 0"
+#版本
+new_soft_version: "By.CSS_SELECTOR, '.el-form--label-right div.selected  input', 1"
+#分类
+new_soft_classify: "By.CSS_SELECTOR, '.el-form--label-right div.el-select input', 0"
+#分类-处理
+soft_classify_dispose: "By.XPATH, '//span[text()=\"处理\"]'"
+#分类-计算
+soft_classify_count: "By.XPATH, '//span[text()=\"计算\"]'"
+#系统
+new_soft_system: "By.CSS_SELECTOR, '.el-form--label-right div.el-select input', 1"
+#系统-win7
+soft_system_win7: "By.XPATH, '//span[text()=\"Windows 7\"]'"
+#系统-win10
+soft_system_win10: "By.XPATH, '//span[text()=\"Windows 10\"]'"
+#系统-redhat6
+soft_system_redhat6: "By.XPATH, '//span[text()=\"RedHat 6\"]'"
+#系统-redhat7
+soft_system_redhat7: "By.XPATH, '//span[text()=\"RedHat 7\"]'"
+#许可类型
+new_soft_license: "By.CSS_SELECTOR, '.el-form--label-right div.el-select input', 2"
+#许可类型-GeoEast
+soft_license_GeoEast: "By.XPATH, '//span[text()=\"GeoEast\"]'"
+#许可类型-Flexlm
+soft_license_Flexlm: "By.XPATH, '//span[text()=\"Flexlm\"]'"
+#负载类型
+new_soft_load: "By.CSS_SELECTOR, '.el-form--label-right div.el-select input', 3"
+#负载类型-内存
+soft_load_memory: "By.XPATH, '//span[text()=\"内存\"]'"
+#负载类型-cpu
+soft_load_cpu: "By.XPATH, '//span[text()=\"CPU\"]'"
+#连接方式
+new_soft_connection: "By.CSS_SELECTOR, '.el-form--label-right div.el-select input', 4"
+#连接方式-realvnc
+soft_connection_realvnc: "By.XPATH, '//span[text()=\"realvnc\"]'"
+#连接方式-dcv2019
+soft_connection_dcv2019: "By.XPATH, '//span[text()=\"dcv2019\"]'"
+#连接方式-dcv2017
+soft_connection_dcv2017: "By.XPATH, '//span[text()=\"dcv2017\"]'"
+#连接方式-dcv2016
+soft_connection_dcv2016: "By.XPATH, '//span[text()=\"dcv2016\"]'"
+#连接方式-RDSH
+soft_connection_rdsh: "By.XPATH, '//span[text()=\"rdsh\"]'"
+#连接方式-XenApp
+soft_connection_xenapp: "By.XPATH, '//span[text()=\"xenapp\"]'"
+#连接方式-horizon
+soft_connection_horizon: "By.XPATH, '//span[text()=\"horizon\"]'"
+#图标上传
+new_soft_upload_icon: "By.XPATH, '//span[text()=\"上传\"]'"
+#图标名称
+icon_name: "By.CSS_SELECTOR, '.el-dialog__body input[placeholder=\"图标名称\"]'"
+#选择文件
+select_icon_file: "By.XPATH, '//span[text()=\"选择文件\"]'"
+#新增图标确定
+add_icon_confirm: "By.CSS_SELECTOR, 'div[aria-label=\"新增\"] div.el-dialog__footer button.el-button--primary'"
+#图标下拉框
+list_icon: "By.CSS_SELECTOR, '.el-form--label-right div.el-select input', 5"
+#选中图标_CGG
+select_icon_CGG: "By.XPATH, '//li/span[text()=\"CGG\"]'"
+#选中图标_LandMark
+select_icon_LandMark: "By.XPATH, '//li/span[text()=\"LandMark\"]'"
+#选中图标_Omega
+select_icon_Omega: "By.XPATH, '//li/span[text()=\"Omega\"]'"
+#选中图标_Petrel
+select_icon_Petrel: "By.XPATH, '//li/span[text()=\"Petrel\"]'"
+#选中图标_Mtsoft2D
+select_icon_Mtsoft2D: "By.XPATH, '//li/span[text()=\"Mtsoft2D\"]'"
+#应用管理员
+new_soft_admin: "By.CSS_SELECTOR, '.el-form--label-right div.el-select input', 6"
+#应用管理员-haoyc00
+soft_admin: "By.XPATH, '//span[text()=\"郝彦超00\"]'"
+#软件目录
+new_soft_directory: "By.CSS_SELECTOR, 'input[placeholder=\"请输入内容\"]', 2"
+#启动命令
+new_soft_command: "By.CSS_SELECTOR, 'input[placeholder=\"请输入内容\"]', 3"
+#厂商
+new_soft_firm: "By.CSS_SELECTOR, '.dialogBottom div.selected  input', 0"
+#购买时间
+new_soft_time: "By.CSS_SELECTOR, '.el-form--label-right div.el-date-editor--datetime input'"
+#选择时间（此刻）
+now: "By.CSS_SELECTOR, '.has-time div.el-picker-panel__footer button.el-button--text'"
+#产权单位
+new_soft_units: "By.CSS_SELECTOR, '.dialogBottom input[placeholder=\"请选择\"]'"
+#产权单位-局级
+unit_juji: "By.CSS_SELECTOR, '.el-cascader__dropdown span.el-radio__inner'"
+#收起产权单位列表
+shutdown_unit_list: "By.CSS_SELECTOR, 'div.is-focus'"
+#资产编号
+new_asset_num: "By.CSS_SELECTOR, '.dialogBottom div.selected  input', 1"
+#确定按钮
+confrim: "By.XPATH, '//footer/button/span[text()=\"确定\"]'"
+#获取设备数量
+soft_number: "By.CSS_SELECTOR, '.is-background span.el-pagination__total'"
+#03编辑设备
+#编辑硬件
+edit_hardware: "By.CSS_SELECTOR, '.el-table__row td.is-center p'"
+#设备备注信息
+describe_text: "By.XPATH, '//div[text()=\"编辑硬件资源\"]'"
+#04更新设备信息
+#选中全部设备
+select_all: "By.CSS_SELECTOR, '.el-table__header-wrapper span.el-checkbox__inner'"
+#更新按钮
+update_hardware: "By.XPATH, '//span[text()=\"更新\"]'"
+#确认更新：
+update_confirm: "By.CSS_SELECTOR, '.el-message-box__btns button.el-button--primary'"
+#MAC地址
+mac_text: "By.XPATH, '//div[text()=\"222\"]'"
+#05下载模版/导入模版/导出模版
+download_file: "By.XPATH, '//span[text()=\"下载导入模板\"]'"
+#导入模版
+upload_file: "By.XPATH, '//span[text()=\"导入\"]'"
+#导出模版
+export_file: "By.XPATH, '//span[text()=\"导出\"]'"
+#搜索输入框
+search_input: "By.CSS_SELECTOR, '.top input[type=\"text\"]'"
+#搜索按钮
+search_button: "By.XPATH, '//span[text()=\"搜索\"]'"
+#停用
+block_up: "By.XPATH, '//span[text()=\"停用\"]'"
+#启用
+start: "By.XPATH, '//span[text()=\"启用\"]'"
+#删除按钮
+delete: "By.XPATH, '//span[text()=\"删除\"]'"
+

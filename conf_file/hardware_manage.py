@@ -114,7 +114,7 @@ class HardwareManage(Method):
         self.click_element(loc("device_manager"))
 
     # 设备管理员-haoyc00
-    def click_device_haoyc00(self):
+    def click_device_admin(self):
         self.click_element(loc("device_haoyc00"))
 
     # 确定创建

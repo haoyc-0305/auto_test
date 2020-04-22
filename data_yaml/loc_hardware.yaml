@@ -55,7 +55,7 @@ shutdown_unit_list: "By.CSS_SELECTOR, 'div.is-focus'"
 #设备管理员
 device_manager: "By.CSS_SELECTOR, '.el-form--label-right div[class=\"el-input el-input--suffix\"] input', 5"
 #设备管理员-haoyc00
-device_haoyc00: "By.XPATH, '//span[text()=\"haoyc00\"]'"
+device_haoyc00: "By.XPATH, '//span[text()=\"郝彦超00\"]'"
 #确定按钮
 confrim: "By.XPATH, '//footer/button/span[text()=\"确定\"]'"
 #获取设备数量
