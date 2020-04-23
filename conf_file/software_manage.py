@@ -62,9 +62,9 @@ class SoftwareManage(Method):
     def click_new_soft_load(self, load_class):
         self.click_element(loc("new_soft_load"))
         if "memory" in load_class:
-            self.click_element(loc("soft_load_memory"))
+            self.click_element(loc("soft_load_memory"), clear=2)
         elif "cpu" in load_class:
-            self.click_element(loc("soft_load_cpu"))
+            self.click_element(loc("soft_load_cpu"), clear=2)
 
     # 连接方式
     def click_new_soft_connection(self, connection_class):
@@ -89,7 +89,7 @@ class SoftwareManage(Method):
         self.click_element(loc("new_soft_upload_icon"))
         self.input_text(loc("icon_name"), icon_name)
         self.click_element(loc("select_icon_file"))
-        self.file_upload("%s.png" % icon_name)
+        self.file_upload("%s.png" % icon_name, wait=3)
         self.click_element(loc("add_icon_confirm"))
 
     # 图标下拉框
@@ -142,5 +142,80 @@ class SoftwareManage(Method):
     def click_confrim(self):
         self.click_element(loc("confrim"))
 
+    # 编辑软件
+    def click_edit_software(self):
+        self.click_element(loc("edit_software"))
 
+    # 编辑确认
+    def click_edit_confrim(self):
+        self.click_element(loc("edit_confrim"))
 
+    # 下载模版文件
+    def click_download_file(self):
+        self.click_element(loc("download_file"))
+
+    # 导入
+    def click_upload_file(self):
+        self.click_element(loc("upload_file"))
+
+    # 导出
+    def click_export_file(self):
+        self.click_element(loc("export_file"))
+
+    # 搜索
+    def input_search_input(self, text):
+        self.input_text(loc("search_input"), text)
+        self.click_element(loc("search_button"))
+
+    # 更多功能
+    def click_more(self, module):
+        self.click_element(loc("more"))
+        if "许可信息" in module:
+            self.click_element(loc("license_message"))
+        elif "安装介质" in module:
+            self.click_element(loc("install_media"))
+        elif "安装手册" in module:
+            self.click_element(loc("install_manual"))
+        elif "培训资料" in module:
+            self.click_element(loc("training_materials"))
+        elif "问题反馈" in module:
+            self.click_element(loc("feedback"))
+
+    # 更多-上传文件
+    def click_more_load(self, fine_name):
+        self.click_element(loc("upload"))
+        self.click_element(loc("click_upload"))
+        self.file_upload(fine_name, wait=2)
+        self.click_element(loc("confirm_upload"))
+
+    # 更多-下载文件
+    def click_more_download(self):
+        self.click_element(loc("download_loc"))
+
+    # 更多-输入备注信息
+    def input_note(self, note):
+        self.click_element(loc("remark"))
+        self.input_text(loc("input_remark"), note)
+        self.click_element(loc("save_remark"))
+
+    # 更多-预览
+    def click_preview(self):
+        self.click_element(loc("preview"))
+
+    # 更多-批量删除
+    def click_delete_all(self):
+        self.click_element(loc("select_all"))
+        self.click_element(loc("delete_all"))
+        self.click_element(loc("delete_confirm"))
+
+    # 选中软件
+    def click_software_all(self):
+        self.click_element(loc("software_all"))
+
+    # 删除
+    def click_delete(self):
+        self.click_element(loc("delete"))
+
+    # 确认删除
+    def click_software_delete_confirm(self):
+        self.click_element(loc("software_delete_confirm"))

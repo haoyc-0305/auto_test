@@ -14,7 +14,7 @@ def data(key):
 
 class TestHardware:
 
-    # 打开硬件资源管理
+    # 打开软件资源管理
     def setup_class(self):
         self.driver = setup()
         self.soft = software_manage.SoftwareManage(self.driver)

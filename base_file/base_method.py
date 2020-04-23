@@ -171,7 +171,7 @@ class Method:
                 break
 
     # 上传文件
-    def file_upload(self, file_name):
+    def file_upload(self, file_name, wait=None):
         loc_name = None
         file_path = upload + file_name
         if "chrome" in str(self.driver):
@@ -194,7 +194,10 @@ class Method:
         win32gui.SendMessage(edit, win32con.WM_SETTEXT, None, file_path)
         # 点击打开上传文件
         win32gui.SendMessage(dialog, win32con.WM_COMMAND, 1, button)
-        sleep(10)
+        if wait is None:
+            sleep(10)
+        elif wait is not None:
+            sleep(wait)
 
     # 元素操作
     def find_element(self, loc):

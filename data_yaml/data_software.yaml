@@ -1,3 +1,4 @@
+#新建软件
 soft_parameters:
   -
     soft_name: "CGG"
@@ -54,3 +55,38 @@ soft_parameters:
     soft_directory: "/"
     soft_command: "/"
     asset_num: "Mtsoft2D_2019"
+#编辑软件
+edit_software:
+  - "Omega"
+  - "cpu"
+#下载模版名称
+download_file: "app_Template.xls"
+#导入模版名称
+upload_file: "软件资源导入.xls"
+#导出模版名称
+export_file: "app.xls"
+#更多-上传/下载/备注
+more:
+  -
+    soft_name: "Omega"
+    loc: "安装介质"
+    upload_file: "安装介质.docx"
+    remark: "备注信息"
+  -
+    soft_name: "Omega"
+    loc: "安装手册"
+    upload_file: "安装手册.docx"
+    remark: "备注信息"
+  -
+    soft_name: "Omega"
+    loc: "培训资料"
+    upload_file: "培训资料.docx"
+    remark: "备注信息"
+#预览
+preview:
+  -
+    soft_name: "Omega"
+    loc: "安装手册"
+  -
+    soft_name: "Omega"
+    loc: "培训资料"

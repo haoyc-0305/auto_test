@@ -61,7 +61,7 @@ icon_name: "By.CSS_SELECTOR, '.el-dialog__body input[placeholder=\"图标名称\
 #选择文件
 select_icon_file: "By.XPATH, '//span[text()=\"选择文件\"]'"
 #新增图标确定
-add_icon_confirm: "By.CSS_SELECTOR, 'div[aria-label=\"新增\"] div.el-dialog__footer button.el-button--primary'"
+add_icon_confirm: "By.CSS_SELECTOR, 'div[aria-label=\"新增\"] div.el-dialog__footer button.el-button--primary span'"
 #图标下拉框
 list_icon: "By.CSS_SELECTOR, '.el-form--label-right div.el-select input', 5"
 #选中图标_CGG
@@ -96,38 +96,72 @@ unit_juji: "By.CSS_SELECTOR, '.el-cascader__dropdown span.el-radio__inner'"
 shutdown_unit_list: "By.CSS_SELECTOR, 'div.is-focus'"
 #资产编号
 new_asset_num: "By.CSS_SELECTOR, '.dialogBottom div.selected  input', 1"
-#确定按钮
-confrim: "By.XPATH, '//footer/button/span[text()=\"确定\"]'"
+#新建确定按钮
+confrim: "By.CSS_SELECTOR, 'div[aria-label=\"新建\"] div.finish button.el-button--primary span'"
 #获取设备数量
 soft_number: "By.CSS_SELECTOR, '.is-background span.el-pagination__total'"
-#03编辑设备
-#编辑硬件
-edit_hardware: "By.CSS_SELECTOR, '.el-table__row td.is-center p'"
-#设备备注信息
-describe_text: "By.XPATH, '//div[text()=\"编辑硬件资源\"]'"
-#04更新设备信息
-#选中全部设备
-select_all: "By.CSS_SELECTOR, '.el-table__header-wrapper span.el-checkbox__inner'"
-#更新按钮
-update_hardware: "By.XPATH, '//span[text()=\"更新\"]'"
-#确认更新：
-update_confirm: "By.CSS_SELECTOR, '.el-message-box__btns button.el-button--primary'"
-#MAC地址
-mac_text: "By.XPATH, '//div[text()=\"222\"]'"
-#05下载模版/导入模版/导出模版
+#03编辑软件
+#编辑软件
+edit_software: "By.XPATH, '//p[text()=\"Omega\"]'"
+#编辑确认按钮
+edit_confrim: "By.CSS_SELECTOR, 'div[aria-label=\"编辑\"] div.finish button.el-button--primary span'"
+#负载类型统计
+load_class_num: "By.XPATH, '//div[text()=\"CPU\"]'"
+#04下载模版/导入模版/导出模版
 download_file: "By.XPATH, '//span[text()=\"下载导入模板\"]'"
 #导入模版
 upload_file: "By.XPATH, '//span[text()=\"导入\"]'"
 #导出模版
 export_file: "By.XPATH, '//span[text()=\"导出\"]'"
+#05搜索
 #搜索输入框
 search_input: "By.CSS_SELECTOR, '.top input[type=\"text\"]'"
 #搜索按钮
 search_button: "By.XPATH, '//span[text()=\"搜索\"]'"
-#停用
-block_up: "By.XPATH, '//span[text()=\"停用\"]'"
-#启用
-start: "By.XPATH, '//span[text()=\"启用\"]'"
+#06更多功能
+#更多功能
+more: "By.XPATH, '//span[text()=\"更多功能\"]'"
+#更多功能-许可信息
+license_message: "By.CSS_SELECTOR, '#tab-first'"
+#更多功能-安装介质
+install_media: "By.CSS_SELECTOR, '#tab-second'"
+#更多功能-安装手册
+install_manual: "By.CSS_SELECTOR, '#tab-third'"
+#更多功能-培训资料
+training_materials: "By.CSS_SELECTOR, '#tab-fourth'"
+#更多功能-问题反馈
+feedback: "By.CSS_SELECTOR, '#tab-fifth'"
+#上传
+upload: "By.XPATH, '//button/span[text()=\"上传\"]'"
+#点击上传
+click_upload: "By.CSS_SELECTOR, '#inputUpload'"
+#确认上传
+confirm_upload: "By.CSS_SELECTOR, 'div[aria-label=\"上传\"] div.el-dialog__footer button.el-button--primary span'"
+#上传元素定位
+upload_loc: "By.CSS_SELECTOR, '.tabs-indeer div.is-scrolling-none td.el-table-column--selection'"
+#下载
+download_loc: "By.XPATH, '//span[text()=\"下载\"]'"
+#备注
+remark: "By.XPATH, '//button/span[text()=\"备注\"]'"
+#备注输入框
+input_remark: "By.CSS_SELECTOR, 'textarea.el-textarea__inner'"
+#保存备注
+save_remark: "By.XPATH, '//span[text()=\"保存\"]'"
+#备注元素定位
+remark_loc: "By.XPATH, '//div[text()=\"备注信息\"]'"
+#预览
+preview: "By.XPATH, '//button/span[text()=\"预览\"]'"
+#预览元素定位
+preview_loc: "By.XPATH, '//div/span[text()=\"预览\"]'"
+#全选文件
+select_all: "By.CSS_SELECTOR, 'div[aria-label=\"详情\"] th.el-table-column--selection span.el-checkbox__inner'"
+#更多批量删除
+delete_all: "By.XPATH, '//span[text()=\"批量删除\"]'"
+#更多确认删除
+delete_confirm: "By.CSS_SELECTOR, 'div[aria-label=\"提示\"] button.el-button--primary span'"
+#软件全选
+software_all: "By.CSS_SELECTOR, 'div.body th.el-table-column--selection span.el-checkbox__inner'"
 #删除按钮
 delete: "By.XPATH, '//span[text()=\"删除\"]'"
-
+#确认删除
+software_delete_confirm: "By.CSS_SELECTOR, 'div[aria-label=\"删除\"] button.el-button--primary span'"
