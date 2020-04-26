@@ -1,0 +1,32 @@
+#新建软件
+new_resource_pool:
+  -
+    group_name: "LandMark"
+    type: "compute-vm"
+    soft: "landmark"
+    describe: "LandMark_dcv2017_43"
+    node_name: "dcv2017-43"
+  -
+    group_name: "CGG"
+    type: "compute-vm"
+    soft: "cgg"
+    describe: "CGG_vnc42"
+    node_name: "vnc42"
+  -
+    group_name: "Omega"
+    type: "compute-entity"
+    soft: "omega"
+    describe: "Omega_dcv2019_46"
+    node_name: "dcv2019-46"
+  -
+    group_name: "Petrel"
+    type: "image-vm"
+    soft: "petrel"
+    describe: "Petrel_WIN-HORIZON"
+    node_name: "WIN-HORIZON"
+  -
+    group_name: "Mtsoft2D"
+    type: "image-entity"
+    soft: "mtsoft2d"
+    describe: "Mtsoft2D_WIN1"
+    node_name: "WIN1"

@@ -23,7 +23,7 @@ class Method:
         if clear is None:
             sleep(0.2)
         else:
-            sleep(1)
+            sleep(clear)
         self.find_element(loc).click()
 
     # 输入操作

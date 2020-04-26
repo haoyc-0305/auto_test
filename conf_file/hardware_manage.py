@@ -41,10 +41,14 @@ class HardwareManage(Method):
 
     # 图形节点/虚机
     def click_types(self, type):
-        if type == "图形":
+        if "gui_vm" in type:
             self.click_element(loc("gui_vm"))
-        elif type == "计算":
+        elif "calculate_vm" in type:
             self.click_element(loc("calculate_vm"))
+        elif "gui_entity" in type:
+            self.click_element(loc("gui_entity"))
+        elif "calculate_entity" in type:
+            self.click_element(loc("calculate_entity"))
 
     # IP(外网)
     def input_out_ip(self, out_ip):

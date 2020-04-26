@@ -30,7 +30,7 @@ class TestDomain:
 
     # 删除所有域
     def test_delete_domain(self, text_name="【删除域】"):
-        self.domain.click_all_domain(clear=1)
+        self.domain.click_all_domain()
         self.domain.click_delete_domain()
         self.domain.click_confirm()
         self.domain.element_number(domain_manage.loc("domain_list"), "0", text_name)

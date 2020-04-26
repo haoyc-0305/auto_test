@@ -62,9 +62,9 @@ class SoftwareManage(Method):
     def click_new_soft_load(self, load_class):
         self.click_element(loc("new_soft_load"))
         if "memory" in load_class:
-            self.click_element(loc("soft_load_memory"), clear=2)
+            self.click_element(loc("soft_load_memory"), clear=1)
         elif "cpu" in load_class:
-            self.click_element(loc("soft_load_cpu"), clear=2)
+            self.click_element(loc("soft_load_cpu"), clear=1)
 
     # 连接方式
     def click_new_soft_connection(self, connection_class):

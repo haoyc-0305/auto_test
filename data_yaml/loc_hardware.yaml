@@ -20,6 +20,10 @@ type: "By.CSS_SELECTOR, '.el-form--label-right div[class=\"el-input el-input--su
 gui_vm: "By.XPATH, '//span[text()=\"图形节点/虚机\"]'"
 #计算节点/虚机
 calculate_vm: "By.XPATH, '//span[text()=\"计算节点/虚机\"]'"
+#图形节点/主机
+gui_entity: "By.XPATH, '//span[text()=\"图形节点/主机\"]'"
+#计算节点/主机
+calculate_entity: "By.XPATH, '//span[text()=\"计算节点/主机\"]'"
 #外网IP
 out_ip: "By.CSS_SELECTOR, '.el-form--label-right div[class=\"f2 el-input el-input--suffix\"] input', 0"
 #内网IP

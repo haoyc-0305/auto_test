@@ -1,0 +1,44 @@
+#00打开资源池管理
+#打开硬件资源管理
+resource_manage: "By.XPATH, '//div[text()=\"资源管理\"]'"
+#打开资源池管理
+resource_pool_manage: "By.XPATH, '//li[text()=\"资源池管理 \"]'"
+#01新建资源池
+#新建资源池
+new_resource_pool: "By.XPATH, '//button/span[text()=\"新建\"]'"
+#组名
+group_name: "By.CSS_SELECTOR, 'div[aria-label=\"新建组\"] form input[placeholder=\"请输入内容\"]'"
+#类型
+type: "By.CSS_SELECTOR, '.dialogTop div.el-select  div i', 0"
+#类型-计算节点/虚机
+compute_node_vm: "By.XPATH, '//li/span[text()=\"计算节点/虚机\"]'"
+#类型-计算节点/主机
+compute_node_entity: "By.XPATH, '//li/span[text()=\"计算节点/主机\"]'"
+#类型-图形节点/虚机
+image_node_vm: "By.XPATH, '//li/span[text()=\"图形节点/虚机\"]'"
+#类型-图形节点/主机
+image_node_entity: "By.XPATH, '//li/span[text()=\"图形节点/主机\"]'"
+#应用软件
+soft: "By.CSS_SELECTOR, '.dialogTop div.el-select  div i', 1"
+#应用软件-CGG
+soft_cgg: "By.XPATH, '//li/span[text()=\"CGG\"]'"
+#应用软件-LandMark
+soft_landmark: "By.XPATH, '//li/span[text()=\"LandMark\"]'"
+#应用软件-Omega
+soft_omega: "By.XPATH, '//li/span[text()=\"Omega\"]'"
+#应用软件-Petrel
+soft_petrel: "By.XPATH, '//li/span[text()=\"Petrel\"]'"
+#应用软件Mtsoft2D
+soft_mtsoft2d: "By.XPATH, '//li/span[text()=\"Mtsoft2D\"]'"
+#描述
+describe: "By.CSS_SELECTOR, 'div[aria-label=\"新建组\"] form textarea'"
+#新建-搜索输入框
+input_search: "By.CSS_SELECTOR, '.dialogBottom div.top input'"
+#新建-搜索按钮
+click_search: "By.CSS_SELECTOR, '.dialogBottom div.top button'"
+#选择节点
+select: "By.CSS_SELECTOR, '.leftTable th span.el-checkbox__inner'"
+#确定
+new_confirm: "By.CSS_SELECTOR, '.finish button.el-button--primary span'"
+#资源池数量
+resource_number: "By.CSS_SELECTOR, '.is-background span.el-pagination__total'"

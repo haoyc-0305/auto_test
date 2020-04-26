@@ -2,7 +2,7 @@
 hardware_parameters:
   -
     system_type: "linux"
-    type: "计算"
+    type: "calculate_vm"
     out_ip: "10.1.1.42"
     in_ip: "192.168.1.42"
     describe: "vnc"
@@ -12,7 +12,7 @@ hardware_parameters:
     asset_num: "vnc42"
   -
     system_type: "linux"
-    type: "计算"
+    type: "calculate_vm"
     out_ip: "10.1.1.43"
     in_ip: "192.168.1.43"
     describe: "dcv2017"
@@ -22,7 +22,7 @@ hardware_parameters:
     asset_num: "dcv201743"
   -
     system_type: "linux"
-    type: "计算"
+    type: "calculate_entity"
     out_ip: "10.1.1.46"
     in_ip: "192.168.1.46"
     describe: "dcv2019"
@@ -32,7 +32,7 @@ hardware_parameters:
     asset_num: "dcv201946"
   -
     system_type: "windows"
-    type: "图形"
+    type: "gui_vm"
     out_ip: "10.1.1.47"
     in_ip: "192.168.1.47"
     describe: "horizon"

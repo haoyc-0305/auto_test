@@ -27,7 +27,6 @@ class TestHardware:
     # 新建硬件设备.
     @pytest.mark.parametrize("parameters", data("hardware_parameters"))
     def test_new_linux_hardware(self, parameters):
-        self.driver.refresh()
         device_number = self.hardware.get_text(hardware_manage.loc("device_number"))
         self.hardware.click_new_hardware()
         self.hardware.click_system_type()

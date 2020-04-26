@@ -31,20 +31,20 @@ class AuthorityManage(Method):
         self.click_element(loc("authority_confirm"))
 
     # 选择测试职权
-    def click_test_authority_name(self, clear=None):
-        self.click_element(loc("test_authority_name"), clear)
+    def click_test_authority_name(self):
+        self.click_element(loc("test_authority_name"), clear=1)
 
     # 选中应用管理员
-    def click_app_authority_name(self, clear=None):
-        self.click_element(loc("app_authority_name"), clear)
+    def click_app_authority_name(self):
+        self.click_element(loc("app_authority_name"), clear=1)
 
     # 选中设备管理员
-    def click_device_authority_name(self, clear=None):
-        self.click_element(loc("device_authority_name"), clear)
+    def click_device_authority_name(self):
+        self.click_element(loc("device_authority_name"), clear=1)
 
     # 选中系统管理员
-    def click_system_authority_name(self, clear=None):
-        self.click_element(loc("system_authority_name"), clear)
+    def click_system_authority_name(self):
+        self.click_element(loc("system_authority_name"), clear=1)
 
 
     # 选择权限

@@ -31,12 +31,12 @@ class DomainManage(Method):
         self.click_element(loc("domain_class"))
 
     # 选中AD
-    def click_domain_ad(self, clear=None):
-        self.click_element(loc("domain_ad"), clear)
+    def click_domain_ad(self):
+        self.click_element(loc("domain_ad"), clear=1)
 
     # 选中NIS
-    def click_domain_nis(self, clear=None):
-        self.click_element(loc("domain_nis"), clear)
+    def click_domain_nis(self):
+        self.click_element(loc("domain_nis"), clear=1)
 
     # 输入主域IP
     def input_domain_master_ip(self, master_ip):
@@ -174,8 +174,8 @@ class DomainManage(Method):
         self.click_element(loc("confirm"))
 
     # 选中所有域
-    def click_all_domain(self, clear=None):
-        self.click_element(loc("select_all_domain"), clear)
+    def click_all_domain(self):
+        self.click_element(loc("select_all_domain"), clear=1)
 
     # 删除域按钮
     def click_delete_domain(self):
