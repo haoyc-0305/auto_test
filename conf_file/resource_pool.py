@@ -68,3 +68,44 @@ class ResourcePool(Method):
     # 新建确认
     def click_new_confirm(self):
         self.click_element(loc("new_confirm"))
+
+    # 点击资源池
+    def click_resource_pool(self):
+        self.click_element(loc("click_resource"))
+
+    # 编辑备注
+    def input_edit_resource(self, edit_resource):
+        self.input_text(loc("edit_describe"), edit_resource)
+
+    # 下载模版文件
+    def click_download_file(self):
+        self.click_element(loc("download_file"))
+
+    # 导入
+    def click_upload_file(self):
+        self.click_element(loc("upload_file"))
+
+    # 导出
+    def click_export_file(self):
+        self.click_element(loc("export_file"))
+
+    # 搜索
+    def input_search_input(self, text):
+        self.input_text(loc("search_input"), text)
+        self.click_element(loc("search_button"))
+
+    # 详情
+    def click_particulars(self):
+        self.click_element(loc("particulars"))
+
+    # 选中所有资源池
+    def click_select_all(self):
+        self.click_element(loc("select_all"))
+
+    # 点击删除按钮
+    def click_delete_button(self):
+        self.click_element(loc("delete_button"))
+
+    # 确认删除
+    def click_delete_confirm(self):
+        self.click_element(loc("delete_confirm"))

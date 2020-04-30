@@ -1,0 +1,20 @@
+#新建资源授权
+new_resource_auth:
+  -
+    soft_name: "CGG"
+  -
+    soft_name: "LandMark"
+  -
+    soft_name: "Omega"
+  -
+    soft_name: "Petrel"
+  -
+    soft_name: "Mtsoft2D"
+#编辑资源授权
+edit_resource_auth: "Omega"
+#下载导入模版
+download_file: "authorization_template.xls"
+#导入
+import_file: "导入资源授权.xls"
+#导入
+export_file: "app_or_equipment.xls"

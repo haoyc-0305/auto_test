@@ -13,9 +13,9 @@ def download_path():
     path = "C:\\Users\\lenovo\\Downloads\\"
     return path
 
-# 上传模版路径
+# 上传文件路径
 def upload_path():
-    path = "C:\\Users\\lenovo\\Downloads\\Chrome_down\\"
+    path = "E:\\Python\\cloud_import_file\\"
     return path
 
 # 数据库连接信息

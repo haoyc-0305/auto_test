@@ -43,6 +43,7 @@ class Method:
 
     # 获取元素文本
     def get_text(self, loc):
+        sleep(0.5)
         loc_text = self.find_element(loc).text
         return loc_text
 

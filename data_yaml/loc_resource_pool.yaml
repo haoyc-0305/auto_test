@@ -42,3 +42,32 @@ select: "By.CSS_SELECTOR, '.leftTable th span.el-checkbox__inner'"
 new_confirm: "By.CSS_SELECTOR, '.finish button.el-button--primary span'"
 #资源池数量
 resource_number: "By.CSS_SELECTOR, '.is-background span.el-pagination__total'"
+#02编辑资源池
+#点击资源池
+click_resource: "By.XPATH, '//p[text()=\"LandMark\"]'"
+#编辑资源池备注
+edit_describe: "By.CSS_SELECTOR, 'div[aria-label=\"编辑组\"] form textarea'"
+#编辑描述
+loc_describe: "By.XPATH, '//div[text()=\"LandMark_dcv2017_43/node1_181\"]'"
+#03下载模版
+#下载导入模版
+download_file: "By.XPATH, '//span[text()=\"下载导入模板\"]'"
+#导入模版
+upload_file: "By.XPATH, '//span[text()=\"导入\"]'"
+#导出模版
+export_file: "By.XPATH, '//span[text()=\"导出\"]'"
+#04搜索
+#搜索输入框
+search_input: "By.CSS_SELECTOR, '.top input[type=\"text\"]'"
+#搜索按钮
+search_button: "By.XPATH, '//span[text()=\"搜索\"]'"
+#详情
+particulars: "By.XPATH, '//span[text()=\"详情\"]'"
+#详情页
+loc_particulars: "By.XPATH, '//span[text()=\"资源组节点服务器信息\"]'"
+#选择所有
+select_all: "By.CSS_SELECTOR, 'div.el-table__header-wrapper th.el-table-column--selection span.el-checkbox__inner'"
+#删除
+delete_button: "By.XPATH, '//button/span[text()=\"删除\"]'"
+#确认删除
+delete_confirm: "By.CSS_SELECTOR, 'div[aria-label=\"删除\"] button.el-button--primary span'"

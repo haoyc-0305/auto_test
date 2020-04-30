@@ -47,7 +47,7 @@ sql: 'UPDATE "hardware" SET "extranetmacip"=222'
 #下载模版名称
 download_file: "equipment_Template.xls"
 #导入模版名称
-upload_file: "硬件设备导入.xls"
+upload_file: "导入硬件设备.xls"
 #导出模版名称
 export_file: "equipment.xls"
 #搜索设备IP

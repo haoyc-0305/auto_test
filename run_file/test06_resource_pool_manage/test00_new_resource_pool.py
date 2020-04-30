@@ -1,7 +1,6 @@
 import os, sys
 sys.path.append(os.getcwd())
 import pytest
-from time import sleep
 from base_file.base_driver import setup, login
 from base_file.base_yaml import data_yaml
 from conf_file import resource_pool
@@ -36,7 +35,7 @@ class TestResourcePool:
         self.resource.click_node()
         self.resource.click_new_confirm()
         self.resource.not_text_element(resource_pool.loc("resource_number"), resource_number, "新建资源池【%s】"
-                                     % resource["group_name"])
+                                    % resource["group_name"])
 
 
 if __name__ == '__main__':

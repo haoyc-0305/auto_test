@@ -62,7 +62,7 @@ edit_software:
 #下载模版名称
 download_file: "app_Template.xls"
 #导入模版名称
-upload_file: "软件资源导入.xls"
+upload_file: "导入软件资源.xls"
 #导出模版名称
 export_file: "app.xls"
 #更多-上传/下载/备注

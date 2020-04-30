@@ -1,0 +1,50 @@
+#00打开资源授权
+#打开资源管理
+resource_manage: "By.XPATH, '//div[text()=\"资源管理\"]'"
+#打开资源授权
+open_resource_auth: "By.XPATH, '//li[text()=\"资源授权 \"]'"
+#01新建授权
+#新建资源授权
+new_resource_auth: "By.XPATH, '//button/span[text()=\"新建\"]'"
+#选中用户
+select_user: "By.XPATH, '//span[text()=\"测试组\"]'"
+#新建弹窗搜索
+new_search_input: "By.CSS_SELECTOR, '.options input[placeholder=\"搜索\"]'"
+#新建弹窗搜索按钮
+new_search_button: "By.CSS_SELECTOR, '.options button'"
+#选中软件
+select_soft: "By.CSS_SELECTOR, '.is-scrolling-none tr span.el-radio__inner'"
+#选中资源组
+select_resource_group: "By.CSS_SELECTOR, '.el-tabs__content span.custom-tree-node  span'"
+#确认创建
+resource_auth_confirm: "By.XPATH, '//span[text()=\"完成\"]'"
+#资源授权数量
+resource_auth_number: "By.CSS_SELECTOR, '.is-background span.el-pagination__total'"
+#02编辑授权
+#搜索输入框
+search_input: "By.CSS_SELECTOR, '.top input.el-input__inner'"
+#搜索按钮
+search_button: "By.XPATH, '//span[text()=\"搜索\"]'"
+#选中授权
+select_auth: "By.CSS_SELECTOR, '.has-gutter th.el-table-column--selection span.el-checkbox__inner'"
+#编辑按钮
+edit_button: "By.XPATH, '//button/span[text()=\"编辑\"]'"
+#编辑搜索
+edit_search_input: "By.CSS_SELECTOR, '.options input[placeholder=\"搜索\"]'"
+#编辑搜索按钮
+edit_search_button: "By.CSS_SELECTOR, '.options button'"
+#编辑修改资源组
+edit_select_resource_group: "By.CSS_SELECTOR, '.el-tabs__content span.custom-tree-node  span', 1"
+#编辑资源自名称
+resource_group_name: "By.XPATH, '//p[text()=\"导入测试2019\"]'"
+#03下载模版
+#下载导入模版
+download_file: "By.XPATH, '//span[text()=\"下载导入模板\"]'"
+#导入模版
+upload_file: "By.XPATH, '//span[text()=\"导入\"]'"
+#导出模版
+export_file: "By.XPATH, '//span[text()=\"导出\"]'"
+#删除
+delete: "By.XPATH, '//span[text()=\"删除\"]'"
+#确认删除
+delete_confirm: "By.CSS_SELECTOR, 'div[aria-label=\"删除\"] button.el-button--primary span'"

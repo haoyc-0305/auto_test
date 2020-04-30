@@ -1,4 +1,4 @@
-#新建软件
+#新建资源池
 new_resource_pool:
   -
     group_name: "LandMark"
@@ -30,3 +30,14 @@ new_resource_pool:
     soft: "mtsoft2d"
     describe: "Mtsoft2D_WIN1"
     node_name: "WIN1"
+#编辑资源池
+edit_resource_pool:
+    edit_describe: "LandMark_dcv2017_43/node1_181"
+    node_name: "node1"
+    pool_name: "LandMark"
+#下载导入模版
+download_file: "equipment_template.xls"
+#导入模版
+import_file: "导入资源池.xls"
+#导出资源池
+export_file: "equipment_template.xls"
