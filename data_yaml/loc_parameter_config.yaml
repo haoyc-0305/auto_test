@@ -1,0 +1,31 @@
+#00打开基本信息
+#系统配置
+system_config: "By.XPATH, '//div[text()=\"系统配置\"]'"
+#基本信息
+parameter_config: "By.XPATH, '//li[text()=\"参数配置 \"]'"
+#01新建软件云盘
+#存储配置
+storage_config: "By.CSS_SELECTOR, '.softwareType input'"
+#选中软件
+select_software: "By.XPATH, '//li/span[text()=\"%s\"]'"
+#添加
+add_storage: "By.XPATH, '//button/span[text()=\"添加\"]'"
+#存储IP
+storage_ip: "By.CSS_SELECTOR, 'div[index=\"%s\"] input', 1"
+#存储路径
+storage_path: "By.CSS_SELECTOR, 'div[index=\"%s\"] input', 2"
+#存储协议
+storage_protocol: "By.CSS_SELECTOR, 'div[index=\"%s\"] input', 3"
+#存储协议-nfs
+storage_protocol_nfs: "By.XPATH, \"//li/span[text()='nfs']\", '%s'"
+#空间大小
+space: "By.CSS_SELECTOR, 'div[index=\"%s\"] input', 4"
+#保存
+save: "By.XPATH, '//button/span[text()=\"保存\"]'"
+#软件配置校验
+soft_info_loc: "By.CSS_SELECTOR, 'div[class=\"soft parameter\"]'"
+#02删除软件云盘
+#删除按钮
+del_button: "By.CSS_SELECTOR, 'div[index=\"0\"] div.left div[style]', 0"
+#获取软件存储数量
+software_number: "By.CSS_SELECTOR, 'div[class=\"soft parameter\"]'"

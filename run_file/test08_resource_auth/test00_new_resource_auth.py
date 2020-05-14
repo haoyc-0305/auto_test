@@ -37,4 +37,4 @@ class TestResourceAuth:
 
 
 if __name__ == '__main__':
-    pytest.main(["-s", "test00_new_resource_auth.py"])
+    pytest.main(["-s", "test00_audit_config.py"])

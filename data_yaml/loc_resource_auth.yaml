@@ -7,7 +7,7 @@ open_resource_auth: "By.XPATH, '//li[text()=\"资源授权 \"]'"
 #新建资源授权
 new_resource_auth: "By.XPATH, '//button/span[text()=\"新建\"]'"
 #选中用户
-select_user: "By.XPATH, '//span[text()=\"测试组\"]'"
+select_user: "By.XPATH, '//div/span[text()=\"郝彦超01(haoyc01)\"]', 1"
 #新建弹窗搜索
 new_search_input: "By.CSS_SELECTOR, '.options input[placeholder=\"搜索\"]'"
 #新建弹窗搜索按钮

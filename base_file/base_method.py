@@ -13,6 +13,7 @@ upload = upload_path()
 oracle = database()["oracle"]
 mysql = database()["mysql"]
 
+
 class Method:
 
     def __init__(self, driver):
@@ -46,6 +47,13 @@ class Method:
         sleep(0.5)
         loc_text = self.find_element(loc).text
         return loc_text
+
+    # 获取元素数量
+    def get_element_num(self, loc):
+        by = loc[0]
+        value = loc[1]
+        element_num = self.driver.find_elements(by, value)
+        return len(element_num)
 
     # 判断元素存在
     def displayed_true(self, loc, text):
@@ -93,7 +101,7 @@ class Method:
             new_time = time.strftime("%Y-%m-%d_%H-%M-%S")
             self.driver.get_screenshot_as_file(image + "%s%s.png" % (new_time, text))
 
-    # 通过元素数量判断
+    # 通过元素数量相等判断
     def element_number(self, loc, number, text):
         sleep(2)
         try:
@@ -102,6 +110,19 @@ class Method:
             number_element = self.driver.find_elements(by, value)
             print("%s:" % text, len(number_element) == int(number))
             assert len(number_element) == int(number)
+        except:
+            new_time = time.strftime("%Y-%m-%d_%H-%M-%S")
+            self.driver.get_screenshot_as_file(image + "%s%s.png" % (new_time, text))
+
+    # 通过元素数量不等判断
+    def not_element_number(self, loc, number, text):
+        sleep(2)
+        try:
+            by = loc[0]
+            value = loc[1]
+            number_element = self.driver.find_elements(by, value)
+            print("%s:" % text, len(number_element) != int(number))
+            assert len(number_element) != int(number)
         except:
             new_time = time.strftime("%Y-%m-%d_%H-%M-%S")
             self.driver.get_screenshot_as_file(image + "%s%s.png" % (new_time, text))
@@ -209,5 +230,5 @@ class Method:
         elif len(loc) == 3:
             by = loc[0]
             value = loc[1]
-            location = loc[2]
+            location = int(loc[2])
             return self.driver.find_elements(by, value)[location]

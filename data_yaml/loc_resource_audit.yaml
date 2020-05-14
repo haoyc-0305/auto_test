@@ -1,0 +1,95 @@
+#00打开资源申请/管理
+#资源审批
+resource_audit: "By.XPATH, '//div[text()=\"资源审批\"]'"
+#资源申请
+resource_application: "By.XPATH, '//li[text()=\"资源申请 \"]'"
+#审批管理
+audit_manage: "By.XPATH, '//li[text()=\"审批管理 \"]'"
+#01审批配置
+#审批配置
+audit_config: "By.XPATH, '//div[text()=\"审批配置\"]'"
+#科室列表
+department_list: "By.CSS_SELECTOR, '#pane-dispose input'"
+#选中部门
+select_department: "By.XPATH, '//span[text()=\"云应用事业部\"]'"
+#添加
+add_department: "By.XPATH, '//span[text()=\"添加\"]'"
+#一级审批
+level_one_audit: "By.CSS_SELECTOR, '.disposeText div.el-select', 0"
+#二级审批
+level_two_audit: "By.CSS_SELECTOR, '.disposeText div.el-select', 1"
+#局级
+juji: "By.XPATH, '//div/span[text()=\"北京月新时代科技股份有限公司(3人)\"]', 1"
+#一级审批处级
+level_one_chuji: "By.XPATH, '//div/span[text()=\"云应用事业部(3人)\"]'"
+#二级审计处级
+level_two_chuji: "By.XPATH, '//div/span[text()=\"云应用事业部(3人)\"]', 1"
+#一级审批人
+level_one_approver: "By.CSS_SELECTOR, 'div[role=\"treeitem\"] label span.el-checkbox__input', 4"
+#二级审批人
+level_two_approver: "By.CSS_SELECTOR, 'div[role=\"treeitem\"] label span.el-checkbox__input', 9"
+#保存
+save: "By.XPATH, '//span[text()=\"保存\"]'"
+#配置校验
+config_check: "By.CSS_SELECTOR, '.disposeText div.disposeText'"
+#02提交申请_新建
+#新建资源申请
+new_resource_application: "By.XPATH, '//span[text()=\"新建\"]'"
+#申请类别_个人
+application_class_personal: "By.XPATH, '//span[text()=\"个人\"]'"
+#申请类别_组织单位
+application_class_organization: "By.XPATH, '//span[text()=\"组织单位\"]'"
+#申请类别_外协用户/单位
+application_class_outsourcing: "By.XPATH, '//span[text()=\"外协用户/单位\"]'"
+#项目名称_个人
+project_name_personage: "By.CSS_SELECTOR, '.typelist input[placeholder=\"非必填项\"]'"
+#项目名称_组织
+project_name_organization: "By.CSS_SELECTOR, '.typelist1 input[placeholder=\"非必填项\"]'"
+#开始时间
+start_time: "By.CSS_SELECTOR, '.startTime input'"
+#结束时间
+end_time: "By.CSS_SELECTOR, '.endTime input'"
+#选中时间
+select_time: "By.CSS_SELECTOR, 'div[x-placement=\"bottom-start\"] td[class=\"available today\"] span'"
+#存储容量
+storage_capacity: "By.CSS_SELECTOR, 'div.storage input'"
+#软件类型
+software_type: "By.CSS_SELECTOR, '.softwareType div.el-select'"
+#软件类型_全部
+software_all: "By.XPATH, '//span[text()=\"全部\"]'"
+#添加软件
+add_software: "By.XPATH, '//span[text()=\"添加\"]'"
+#软件列表
+software_list: "By.CSS_SELECTOR, '.soft input'"
+#选择软件_CGG
+select_cgg: "By.XPATH, '//span[text()=\"CGG/realvnc\"]'"
+#选择软件_Omega
+select_omega: "By.XPATH, '//span[text()=\"Omega/2019\"]'"
+#选择软件_Mtsoft2D
+select_mtsoft2d: "By.XPATH, '//span[text()=\"Mtsoft2D/2019\"]'"
+#备注
+note: "By.CSS_SELECTOR, '.textarea textarea'"
+#提交
+submit: "By.XPATH, '//span[text()=\"提交\"]'"
+#二次确认
+reconfirm: "By.CSS_SELECTOR, '.el-message-box__btns button.el-button--primary'"
+#统计提交数量
+resource_audit_number: "By.CSS_SELECTOR, '.is-background span.el-pagination__total'"
+#03领导审批管理
+#待审核
+wait_audit: "By.XPATH, '//button/span[text()=\"审核\"]'"
+#审核通过
+audit_pass: "By.XPATH, '//button/span[text()=\"通过\"]'"
+#待审核列表
+wait_audit_number: "By.CSS_SELECTOR, '#pane-first tr.el-table__row'"
+#管理员审批管理
+#资源授权
+resource_auth: "By.XPATH, '//button/span[text()=\"资源授权\"]'"
+#浏览
+browse: "By.XPATH, '//button/span[text()=\"浏览\"]'"
+#选中资源组
+select_resource_group: "By.CSS_SELECTOR, 'div[aria-label=\"硬件设备\"] div.boxCard span.el-radio__input'"
+#完成授权
+finish: "By.XPATH, '//button/span[text()=\" 完成\"]'"
+#再次确认
+confirm_again: "By.CSS_SELECTOR, 'div[aria-label=\"资源授权\"] div.el-dialog__footer button'"

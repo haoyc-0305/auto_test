@@ -3,11 +3,7 @@ new_resource_auth:
   -
     soft_name: "CGG"
   -
-    soft_name: "LandMark"
-  -
     soft_name: "Omega"
-  -
-    soft_name: "Petrel"
   -
     soft_name: "Mtsoft2D"
 #编辑资源授权

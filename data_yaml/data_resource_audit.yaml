@@ -1,0 +1,35 @@
+#审批配置
+audit_config:
+  module_type: "审批管理"
+#打开资源申请
+open_resource_audit:
+  user_name: "haoyc02"
+  user_pass: "222222"
+  module_type: "资源申请"
+#打开审批管理
+open_audit_manage:
+  -
+    user_name: "haoyc02"
+    user_pass: "222222"
+    module_type: "审批管理"
+  -
+    user_name: "haoyc01"
+    user_pass: "111111"
+    module_type: "审批管理"
+#新建资源申请
+new_resource_application:
+  -
+    application_class: "个人"
+    project_name: "CGG软件申请"
+    storage_capacity: "50"
+    select_software: "cgg"
+  -
+    application_class: "个人"
+    project_name: "Omega软件申请"
+    storage_capacity: "50"
+    select_software: "omega"
+  -
+    application_class: "组织"
+    project_name: "Mtsoft2d软件申请"
+    storage_capacity: "50"
+    select_software: "mtsoft2d"

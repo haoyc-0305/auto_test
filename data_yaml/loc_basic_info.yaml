@@ -1,0 +1,64 @@
+#00打开基本信息
+#系统配置
+system_config: "By.XPATH, '//div[text()=\"系统配置\"]'"
+#基本信息
+basic_info: "By.XPATH, '//li[text()=\"基本信息 \"]'"
+#01新建基本信息
+#新增
+add_info: "By.XPATH, '//button/span[text()=\"新增\"]'"
+#父类
+type: "By.CSS_SELECTOR, 'div[aria-label=\"新增\"] input.el-input__inner', 0"
+#类型-域
+type_domain: "By.XPATH, '//li/span[text()=\"域\"]'"
+#类型-连接
+type_connect: "By.XPATH, '//li/span[text()=\"连接\"]'"
+#类型-负载均衡
+type_load: "By.XPATH, '//li/span[text()=\"负载均衡\"]'"
+#类型-职位
+type_post: "By.XPATH, '//li/span[text()=\"职位\"]'"
+#类型-硬件
+type_hardware: "By.XPATH, '//li/span[text()=\"硬件\"]'"
+#类型-软件
+type_software: "By.XPATH, '//li/span[text()=\"软件\"]'"
+#类型-操作系统
+type_os: "By.XPATH, '//li/span[text()=\"操作系统\"]'"
+#子类
+subtype: "By.CSS_SELECTOR, 'div[aria-label=\"新增\"] input.el-input__inner', 1"
+#域-域类型
+domain_type: "By.XPATH, '//li/span[text()=\"域类型\"]'"
+#连接-连接方式
+connect_way: "By.XPATH, '//li/span[text()=\"连接方式\"]'"
+#负载均衡-负载均衡
+load_leveling: "By.XPATH, '//li/span[text()=\"负载均衡\"]', 1"
+#职位-职位名称
+post_name: "By.XPATH, '//li/span[text()=\"职位名称\"]'"
+#硬件-品牌
+hardware_brand: "By.XPATH, '//li/span[text()=\"品牌\"]'"
+#硬件-资源类型
+hardware_resource_type: "By.XPATH, '//li/span[text()=\"资源类型\"]'"
+#软件-软件类型
+software_type: "By.XPATH, '//li/span[text()=\"软件类型\"]'"
+#软件-许可分类
+software_license_type: "By.XPATH, '//li/span[text()=\"许可分类\"]'"
+#软件-软件图标
+software_icon: "By.XPATH, '//li/span[text()=\"软件图标\"]'"
+#操作系统-操作系统
+sub_os: "By.XPATH, '//li/span[text()=\"操作系统\"]', 1"
+#职位优先级
+post_sn: "By.CSS_SELECTOR, 'input[placeholder=\"优先级\"]'"
+#新建信息名称
+add_info_name: "By.CSS_SELECTOR, 'input[placeholder=\"请输入内容\"]'"
+#图标名称
+icon_name: "By.CSS_SELECTOR, 'input[placeholder=\"图标名称\"]'"
+#选择图标
+select_icon: "By.XPATH, '//button/span[text()=\"选择文件\"]'"
+#确定
+add_confirm: "By.XPATH, '//button/span[text()=\"确定\"]'"
+#校验
+#checout: "By.XPATH, '//label/span[text()=\"%s\"]'"
+checout: "By.CSS_SELECTOR, 'span.el-checkbox__label'"
+#02删除基本信息
+#删除元素
+del_element: "By.XPATH, '//label/span[text()=\"%s\"]'"
+#删除
+del_info: "By.XPATH, '//button/span[text()=\"删除\"]'"

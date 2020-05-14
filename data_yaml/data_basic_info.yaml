@@ -1,0 +1,67 @@
+#新增基本信息
+add_info:
+  -
+    type: "域"
+    subtype: "域类型"
+    info_name: "新增域类型"
+  -
+    type: "连接"
+    subtype: "连接方式"
+    info_name: "新增连接方式"
+  -
+    type: "负载均衡"
+    subtype: "负载均衡"
+    info_name: "新增负载均衡"
+  -
+    type: "职位"
+    subtype: "职位名称"
+    sn: "0"
+    info_name: "新增职位名称"
+    checout: "新增职位名称(0)"
+  -
+    type: "硬件"
+    subtype: "资源类型"
+    info_name: "新增硬件资源类型"
+  -
+    type: "硬件"
+    subtype: "硬件品牌"
+    info_name: "新增硬件品牌"
+  -
+    type: "软件"
+    subtype: "软件类型"
+    info_name: "新增软件类型"
+  -
+    type: "软件"
+    subtype: "许可分类"
+    info_name: "新增许可分类"
+  -
+    type: "软件"
+    subtype: "软件图标"
+    info_name: "新增软件图标"
+    icon_name: "Omega.png"
+  -
+    type: "操作系统"
+    subtype: "操作系统"
+    info_name: "新增操作系统"
+#删除基本信息
+del_info:
+  -
+    info_name: "新增域类型"
+  -
+    info_name: "新增连接方式"
+  -
+    info_name: "新增负载均衡"
+  -
+    info_name: "新增职位名称(0)"
+  -
+    info_name: "新增硬件资源类型"
+  -
+    info_name: "新增硬件品牌"
+  -
+    info_name: "新增软件类型"
+  -
+    info_name: "新增许可分类"
+  -
+    info_name: "新增软件图标"
+  -
+    info_name: "新增操作系统"

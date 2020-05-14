@@ -1,0 +1,18 @@
+#00打开基本信息
+#系统配置
+system_config: "By.XPATH, '//div[text()=\"系统配置\"]'"
+#通知公告
+announcements: "By.XPATH, '//li[text()=\"通知公告 \"]'"
+#01新建公告
+#新建
+add_announcements: "By.XPATH, '//button/span[text()=\"新建\"]'"
+#登录页标题展示
+log_show: "By.CSS_SELECTOR, 'div[aria-label=\"新建\"] div[role=\"radiogroup\"] span.el-radio__input', 0"
+#着重显示
+focus_show: "By.CSS_SELECTOR, 'div[aria-label=\"新建\"] div[role=\"radiogroup\"] span.el-radio__input', 2"
+#标题
+title: "By.CSS_SELECTOR, 'div[aria-label=\"新建\"] input[type=\"text\"]'"
+#内容
+content: "By.CSS_SELECTOR, 'div[aria-label=\"新建\"] textarea'"
+#确定
+confirm: "By.CSS_SELECTOR, '//footer/button/span[text()=\"确定\"]'"

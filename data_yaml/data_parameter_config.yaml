@@ -1,0 +1,47 @@
+#新建存储配置
+add_parameter_config:
+  -
+    software_name: "Omega/2019"
+    software_num: "0"
+    storage_server_ip: "10.1.1.37"
+    storage_server_path: "/cloud_dist/Omega"
+    memory_space: "50"
+  -
+    software_name: "Petrel/horizon"
+    software_num: "1"
+    storage_server_ip: "10.1.1.37"
+    storage_server_path: "/cloud_dist/Petrel"
+    memory_space: "50"
+  -
+    software_name: "LandMark/2017"
+    software_num: "2"
+    storage_server_ip: "10.1.1.37"
+    storage_server_path: "/cloud_dist/LandMark"
+    memory_space: "50"
+  -
+    software_name: "CGG/realvnc"
+    software_num: "3"
+    storage_server_ip: "10.1.1.37"
+    storage_server_path: "/cloud_dist/CGG"
+    memory_space: "50"
+  -
+    software_name: "Mtsoft2D/2019"
+    software_num: "4"
+    storage_server_ip: "10.1.1.37"
+    storage_server_path: "/cloud_dist/Mtsoft2D"
+    memory_space: "50"
+
+#删除软件
+del_parameter_config:
+  -
+    software_num: "0"
+  -
+    software_num: "1"
+  -
+    software_num: "2"
+  -
+    software_num: "3"
+  -
+    software_num: "4"
+
+
