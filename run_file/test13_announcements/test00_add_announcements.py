@@ -33,4 +33,4 @@ class TestAddAnnouncements:
 
 
 if __name__ == '__main__':
-    pytest.main(["-s","test00_add_announcements.py"])
+    pytest.main(["-s","test00_add_user_manual.py"])

@@ -1,0 +1,34 @@
+#00打开基本信息
+#系统配置
+system_config: "By.XPATH, '//div[text()=\"系统配置\"]'"
+#通知公告
+user_manual: "By.XPATH, '//li[text()=\"用户手册 \"]'"
+#01新建手册
+#新建
+add_user_manual: "By.XPATH, '//button/span[text()=\"新建\"]'"
+#标题
+title: "By.CSS_SELECTOR, 'div[aria-label=\"新建\"] input[type=\"text\"]'"
+#选取文件
+select_file: "By.XPATH, '//button/span[text()=\"选取文件\"]'"
+#说明
+declare: "By.CSS_SELECTOR, 'div[aria-label=\"新建\"] textarea'"
+#新建确认
+add_confirm: "By.XPATH, '//footer/button/span[text()=\"确认\"]'"
+#手册数量
+number: "By.CSS_SELECTOR, '.is-background span.el-pagination__total'"
+#02编辑手册
+#选中手册
+select_user_manual: "By.CSS_SELECTOR, '#usermanual thead.has-gutter th span.el-checkbox__input'"
+#编辑按钮
+edit_user_manual: "By.XPATH, '//button/span[text()=\"编辑\"]'"
+#编辑标题
+edit_title: "By.CSS_SELECTOR, 'div[aria-label=\"编辑\"] div.is-required div.el-input input'"
+#编辑确定
+edit_confirm: "By.XPATH, '//footer/button/span[text()=\"确定\"]'"
+#标题校验
+title_text: "By.CSS_SELECTOR, '#usermanual tr.el-table__row td div.cell', 2"
+#04删除
+#删除按钮
+del_title: "By.XPATH, '//button/span[text()=\"删除\"]'"
+#确认删除
+confirm_del: "By.CSS_SELECTOR, 'div[aria-label=\"删除\"] button.el-button--primary'"
