@@ -15,4 +15,25 @@ title: "By.CSS_SELECTOR, 'div[aria-label=\"新建\"] input[type=\"text\"]'"
 #内容
 content: "By.CSS_SELECTOR, 'div[aria-label=\"新建\"] textarea'"
 #确定
-confirm: "By.CSS_SELECTOR, '//footer/button/span[text()=\"确定\"]'"
+confirm: "By.XPATH, '//footer/button/span[text()=\"确定\"]'"
+#公告数量
+number: "By.CSS_SELECTOR, '.is-background span.el-pagination__total'"
+#02详情
+#详情
+details: "By.XPATH, '//button/span[text()=\"详情\"]'"
+#详情弹框校验
+details_loc: "By.CSS_SELECTOR, 'div[aria-label=\"详情\"] div span.el-dialog__title'"
+#03编辑公告
+#选中公告
+select_announcements: "By.CSS_SELECTOR, '.f-table div.is-scrolling-none td span.el-checkbox__input'"
+#编辑按钮
+edit_announcements: "By.XPATH, '//button/span[text()=\"编辑\"]'"
+#编辑标题
+edit_title: "By.CSS_SELECTOR, 'div[aria-label=\"编辑\"] div.el-input input'"
+#标题校验
+title_text: "By.CSS_SELECTOR, '#tabletdpadding tr.el-table__row td div.cell', 2"
+#04删除
+#删除按钮
+del_title: "By.XPATH, '//button/span[text()=\"删除\"]'"
+#确认删除
+confirm_del: "By.CSS_SELECTOR, 'div[aria-label=\"删除\"] button.el-button--primary'"
