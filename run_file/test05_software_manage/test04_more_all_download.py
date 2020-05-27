@@ -24,15 +24,16 @@ class TestHardware:
     def teardown_class(self):
         self.driver.quit()
 
-    # 保存备注信息
-    @pytest.mark.parametrize("preview", data("preview"))
-    def test_more_preview(self, preview):
-        self.soft.input_search_input(preview["soft_name"])
-        self.soft.click_more(preview["loc"])
-        self.soft.click_preview()
-        self.soft.displayed_true(software_manage.loc("preview_loc"), "%s【文件预览】" % preview["loc"])
+    # 更多功能_批量下载
+    @pytest.mark.parametrize("more", data("more"))
+    def test_more_download(self, more):
+        self.soft.input_search_input(more["soft_name"])
+        self.soft.click_more(more["loc"])
+        self.soft.click_select_all_file()
+        self.soft.click_all_download()
+        self.soft.file_find(more["upload_file"])
         self.driver.refresh()
 
 
 if __name__ == '__main__':
-    pytest.main(["-s", "test06_more_preview.py"])
+    pytest.main(["-s", "test04_more_all_download.py"])

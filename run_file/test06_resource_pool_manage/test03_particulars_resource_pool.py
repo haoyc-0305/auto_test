@@ -22,7 +22,7 @@ class TestResourcePool:
     def teardown_class(self):
         self.driver.quit()
 
-    # 下载导入模版
+    # 详情
     def test_particulars(self, particulars=data("edit_resource_pool")):
         self.resource.input_search_input(particulars["pool_name"])
         self.resource.click_particulars()

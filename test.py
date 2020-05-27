@@ -1,3 +1,5 @@
+import os, sys
+sys.path.append(os.getcwd())
 # f = open("C:\\Users\\lenovo\\Desktop\\曲线单位.txt", "r")
 # i = open("C:\\Users\\lenovo\\Desktop\\曲线单位.txt", "r")
 # line_num = 0
@@ -22,5 +24,4 @@
 #     print("文件不存在重复项！")
 from selenium.webdriver.common.by import By
 
-a = eval("By.CSS_SELECTOR, 'div[index=\"%s\"] input', \"3\"")
-print(tuple(a)[2])
+os.system("allure generate E:/Python/cloud_test/run_file/test09_resource_audit/logs_file -o E:/Python/cloud_test/run_file/test09_resource_audit/logs_file/html")

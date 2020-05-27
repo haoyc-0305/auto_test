@@ -1,0 +1,68 @@
+#00打开软件
+#打开软件
+open_app: "By.XPATH, '//button/span[text()=\"打开软件\"]', \"%s\""
+#连接记录
+connect_record: "By.CSS_SELECTOR, '#pane-MyLink tr.el-table__row'"
+#软件名称
+soft_name: "By.XPATH, '//ul/li/div/div/span', \"%s\""
+#01我的连接
+#搜索输入框
+search_input: "By.CSS_SELECTOR, '.appbottom div#pane-MyLink div.search  input'"
+#搜索按钮
+search_button: "By.CSS_SELECTOR, '#pane-MyLink div.el-input-group__append button'"
+#详情
+details: "By.XPATH, '//button/span[text()=\"详情\"]'"
+#详情弹框
+details_popout: "By.CSS_SELECTOR, 'div[aria-label=\"详情\"]'"
+#关闭
+close: "By.XPATH, '//button/span[text()=\"关闭\"]'"
+#关闭确定
+close_confirm: "By.CSS_SELECTOR, 'div[aria-label=\"信息\"] button.el-button--primary'"
+#连接统计
+connection: "By.CSS_SELECTOR, '#pane-MyLink span.el-pagination__total'"
+#培训资料
+cultivate_material: "By.CSS_SELECTOR, 'li[title=\"Omega\"] button', 1"
+#预览
+preview: "By.XPATH, '//button/span[text()=\"预览\"]'"
+#预览弹框
+preview_bounced: "By.CSS_SELECTOR, 'div[aria-label=\"预览\"]'"
+#下载
+download: "By.XPATH, '//button/span[text()=\"下载\"]', 1"
+#留言
+leave_word: "By.XPATH, '//button/span[text()=\"留言\"]'"
+#留言输入
+input_leave_word: "By.CSS_SELECTOR, 'div.el-textarea textarea[placeholder=\"请输入内容\"]'"
+#发表留言
+publish: "By.CSS_SELECTOR, 'div[aria-label=\"留言\"] button.el-button--primary'"
+#留言校验
+massage_checkout: "By.CSS_SELECTOR, '#msgdiv div.inputtext', 1"
+#我的分享
+my_share: "By.CSS_SELECTOR, '#tab-MyShare'"
+#我的分享_关闭
+my_share_close: "By.CSS_SELECTOR, '#pane-MyShare tr.el-table__row td button.el-button--danger', 0"
+#我的分享_关闭确认
+my_share_close_confirm: "By.CSS_SELECTOR, 'div[aria-label=\"信息\"] button.el-button--primary'"
+#我的分享链接统计
+share_connection: "By.CSS_SELECTOR, '#pane-MyShare span.el-pagination__total'"
+#我的分享_共享
+share: "By.XPATH, '//button/span[text()=\"共享\"]'"
+#分享-部门
+share_department: "By.XPATH, '//span[text()=\"云应用事业部\"]'"
+#分享-用户
+share_user: "By.XPATH, '//span[text()=\"郝彦超02\"]'"
+#分享_用户移动
+share_move_user: "By.CSS_SELECTOR, '.el-transfer__buttons i.el-icon-arrow-right'"
+#分享_确定
+share_confirm: "By.XPATH, '//button/span[text()=\"确定\"]'"
+#分享-校验
+share_verify: "By.XPATH, '//td/div/span[text()=\"郝彦超02\"]'"
+#清空分享
+clear_share: "By.XPATH, '//button/span[text()=\"清空分享\"]'"
+#清空分享_校验
+clear_share_verify: "By.XPATH, '//span[text()=\"未分享\"]'"
+#我的连接全选
+select_all_connection: "By.CSS_SELECTOR, '#pane-MyLink th.el-table-column--selection span.el-checkbox__input'"
+#批量关闭
+batch_close: "By.XPATH, '//button/span[text()=\"批量关闭\"]'"
+#确定关闭
+batch_close_confirm: "By.CSS_SELECTOR, 'div[aria-label=\"信息\"] button.el-button--primary'"

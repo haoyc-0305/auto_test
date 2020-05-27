@@ -35,4 +35,4 @@ class TestAuditManage:
 
 
 if __name__ == '__main__':
-    pytest.main(["-s", "test02_level_two_audit_manage.py"])
+    pytest.main(["-s", "test06_level_two_audit_manage.py"])

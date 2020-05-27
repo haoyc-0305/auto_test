@@ -20,6 +20,16 @@ open_audit_manage:
 new_resource_application:
   -
     application_class: "个人"
+    project_name: "test1软件申请"
+    storage_capacity: "50"
+    select_software: "test1"
+  -
+    application_class: "组织"
+    project_name: "test2软件申请"
+    storage_capacity: "50"
+    select_software: "test2"
+  -
+    application_class: "个人"
     project_name: "CGG软件申请"
     storage_capacity: "50"
     select_software: "cgg"
@@ -33,3 +43,11 @@ new_resource_application:
     project_name: "Mtsoft2d软件申请"
     storage_capacity: "50"
     select_software: "mtsoft2d"
+#编辑资源申请
+storage_capacity: "80"
+#已通过记录
+pass_record: "2"
+#提交记录
+submit_record: "5"
+#审批记录
+examine_record: "5"

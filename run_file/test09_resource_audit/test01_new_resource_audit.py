@@ -39,7 +39,7 @@ class TestNewResourceAudit:
         self.audit.click_select_software(application_info["select_software"])
         self.audit.input_note(application_info["project_name"])
         self.audit.click_submit()
-        self.audit.click_reconfirm(application_info["application_class"])
+        self.audit.click_reconfirm(application_info["select_software"])
         self.audit.not_text_element(resource_audit.loc("resource_audit_number"), audit_number, "新建资源申请【%s】"
                                     % application_info["select_software"])
 

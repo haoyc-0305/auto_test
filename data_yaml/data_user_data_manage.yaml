@@ -1,0 +1,11 @@
+#登陆用户信息
+user_name: "haoyc01"
+user_pass: "111111"
+#新建文件夹
+folder_name: "新建文件夹"
+folder_remark: "新建文件夹备注"
+#数据上传
+file_upload: "用户数据管理上传.docx"
+#编辑文件夹
+edit_name: "编辑文件夹"
+edit_remark: "编辑文件夹备注"

@@ -27,7 +27,7 @@ class TestAdminAuditManage:
         wait_audit_number = self.audit.get_element_num(resource_audit.loc("resource_auth"))
         num = 0
         while num < wait_audit_number:
-            audit_number = self.audit.get_text(resource_audit.loc("resource_au dit_number"))
+            audit_number = self.audit.get_text(resource_audit.loc("resource_audit_number"))
             self.audit.click_audit_manage()
             self.audit.click_browse()
             self.audit.click_select_resource_group()
@@ -38,4 +38,4 @@ class TestAdminAuditManage:
 
 
 if __name__ == '__main__':
-    pytest.main(["-s", "test04_admin_audit_manage.py"])
+    pytest.main(["-s", "test08_admin_audit_manage.py"])

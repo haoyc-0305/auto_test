@@ -139,6 +139,10 @@ click_upload: "By.CSS_SELECTOR, '#inputUpload'"
 confirm_upload: "By.CSS_SELECTOR, 'div[aria-label=\"上传\"] div.el-dialog__footer button.el-button--primary span'"
 #上传元素定位
 upload_loc: "By.CSS_SELECTOR, '.tabs-indeer div.is-scrolling-none td.el-table-column--selection'"
+#选中全选文件
+select_all_file: "By.CSS_SELECTOR, '.tabs-indeer div.el-table__header-wrapper th.el-table-column--selection span.el-checkbox__input'"
+#批量下载
+all_download: "By.XPATH, '//span[text()=\"批量下载\"]'"
 #下载
 download_loc: "By.XPATH, '//span[text()=\"下载\"]'"
 #备注
@@ -159,6 +163,14 @@ select_all: "By.CSS_SELECTOR, 'div[aria-label=\"详情\"] th.el-table-column--se
 delete_all: "By.XPATH, '//span[text()=\"批量删除\"]'"
 #更多确认删除
 delete_confirm: "By.CSS_SELECTOR, 'div[aria-label=\"提示\"] button.el-button--primary span'"
+#留言
+massage: "By.XPATH, '//button/span[text()=\"留言\"]'"
+#留言板
+input_massage: "By.CSS_SELECTOR, '.el-textarea textarea'"
+#发表留言
+publish_massage: "By.CSS_SELECTOR, 'div[aria-label=\"留言\"] button.el-button--primary'"
+#留言校验
+massage_checkout: "By.CSS_SELECTOR, '#msgdiv div.inputtext'"
 #软件全选
 software_all: "By.CSS_SELECTOR, 'div.body th.el-table-column--selection span.el-checkbox__inner'"
 #删除按钮

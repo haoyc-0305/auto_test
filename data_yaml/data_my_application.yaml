@@ -1,0 +1,16 @@
+#登陆信息
+user_name: "haoyc01"
+user_pass: "111111"
+#打开软件
+open_application:
+  - "0"
+  - "1"
+  - "2"
+  - "3"
+  - "4"
+#搜索
+search_name: "Omega-2019"
+#培训资料下载
+file_name: "培训资料.docx"
+#留言内容
+massage: "普通用户发表留言信息"

@@ -61,6 +61,10 @@ software_all: "By.XPATH, '//span[text()=\"全部\"]'"
 add_software: "By.XPATH, '//span[text()=\"添加\"]'"
 #软件列表
 software_list: "By.CSS_SELECTOR, '.soft input'"
+#选择软件_test1
+select_test1: "By.XPATH, '//span[text()=\"导入测试1/test1\"]'"
+#选择软件_test2
+select_test2: "By.XPATH, '//span[text()=\"导入测试2/test2\"]'"
 #选择软件_CGG
 select_cgg: "By.XPATH, '//span[text()=\"CGG/realvnc\"]'"
 #选择软件_Omega
@@ -75,14 +79,37 @@ submit: "By.XPATH, '//span[text()=\"提交\"]'"
 reconfirm: "By.CSS_SELECTOR, '.el-message-box__btns button.el-button--primary'"
 #统计提交数量
 resource_audit_number: "By.CSS_SELECTOR, '.is-background span.el-pagination__total'"
-#03领导审批管理
+#03提交申请-搜索框
+#搜索输入框
+input_search: "By.CSS_SELECTOR, '#pane-first div.search input'"
+#搜索按钮
+button_search: "By.CSS_SELECTOR, '#pane-first div.search button'"
+#04编辑申请
+#选中编辑申请
+select_edit_audit: "By.CSS_SELECTOR, '#pane-first div.is-scrolling-none tr td span.el-checkbox__input', 0"
+#编辑按钮
+button_edit: "By.XPATH, '//button/span[text()=\"编辑\"]'"
+#编辑校验
+loc_verify: "By.XPATH, '//div[text()=\" 80G \"]'"
+#05催办
+#催办按钮
+button_hasten: "By.XPATH, '//span[text()=\"催办 \"]', 0"
+#催办校验
+loc_hasten: "By.CSS_SELECTOR, 'button.is-disabled'"
+#06删除
+button_delete: "By.XPATH, '//button/span[text()=\"删除\"]'"
+#07撤回
+button_recall: "By.XPATH, '//span[text()=\"撤回\"]', 0"
+#08领导审批管理
 #待审核
 wait_audit: "By.XPATH, '//button/span[text()=\"审核\"]'"
 #审核通过
 audit_pass: "By.XPATH, '//button/span[text()=\"通过\"]'"
+#审核拒绝
+audit_refuse: "By.XPATH, '//button/span[text()=\" 拒绝\"]'"
 #待审核列表
 wait_audit_number: "By.CSS_SELECTOR, '#pane-first tr.el-table__row'"
-#管理员审批管理
+#09管理员审批管理
 #资源授权
 resource_auth: "By.XPATH, '//button/span[text()=\"资源授权\"]'"
 #浏览
@@ -93,3 +120,18 @@ select_resource_group: "By.CSS_SELECTOR, 'div[aria-label=\"硬件设备\"] div.b
 finish: "By.XPATH, '//button/span[text()=\" 完成\"]'"
 #再次确认
 confirm_again: "By.CSS_SELECTOR, 'div[aria-label=\"资源授权\"] div.el-dialog__footer button'"
+#10已通过
+#已通过模块
+module_pass: "By.CSS_SELECTOR, '#tab-second'"
+#已通过记录
+pass_record: "By.CSS_SELECTOR, '#pane-second tr.el-table__row'"
+#11提交记录
+#提交模块
+module_submit: "By.CSS_SELECTOR, '#tab-third'"
+#提交记录
+submit_record: "By.CSS_SELECTOR, '#pane-third tr.el-table__row'"
+#12审批记录
+#审批记录模块
+module_examine: "By.CSS_SELECTOR, '#tab-second'"
+#审批记录
+examine_record: "By.CSS_SELECTOR, '#pane-second tr.el-table__row'"

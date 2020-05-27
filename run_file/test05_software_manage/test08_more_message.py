@@ -24,15 +24,15 @@ class TestHardware:
     def teardown_class(self):
         self.driver.quit()
 
-    # 保存备注信息
-    @pytest.mark.parametrize("more", data("more"))
-    def test_more_remark(self, more):
-        self.soft.input_search_input(more["soft_name"])
-        self.soft.click_more(more["loc"])
-        self.soft.input_note(more["remark"])
-        self.soft.displayed_true(software_manage.loc("remark_loc"), "%s【保存备注】" % more["loc"])
-        self.driver.refresh()
+    # 培训资料留言
+    def test_message(self, massage=data("massage")):
+        self.soft.input_search_input(massage["soft_name"])
+        self.soft.click_more(massage["loc"])
+        self.soft.click_massage()
+        self.soft.input_massage(massage["massage"])
+        self.soft.click_publish_massage()
+        self.soft.displayed_true(software_manage.loc("massage_checkout"), "【管理员留言发表】")
 
 
 if __name__ == '__main__':
-    pytest.main(["-s", "test05_more_remark.py"])
+    pytest.main(["-s", "test08_more_message.py"])

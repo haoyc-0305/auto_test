@@ -24,15 +24,15 @@ class TestHardware:
     def teardown_class(self):
         self.driver.quit()
 
-    # 更多功能_下载
+    # 保存备注信息
     @pytest.mark.parametrize("more", data("more"))
-    def test_more_download(self, more):
+    def test_more_remark(self, more):
         self.soft.input_search_input(more["soft_name"])
         self.soft.click_more(more["loc"])
-        self.soft.click_more_download()
-        self.soft.file_find(more["upload_file"])
+        self.soft.input_note(more["remark"])
+        self.soft.displayed_true(software_manage.loc("remark_loc"), "%s【保存备注】" % more["loc"])
         self.driver.refresh()
 
 
 if __name__ == '__main__':
-    pytest.main(["-s", "test04_more_download.py"])
+    pytest.main(["-s", "test06_more_remark.py"])

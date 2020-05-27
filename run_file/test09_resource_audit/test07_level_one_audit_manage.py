@@ -29,10 +29,10 @@ class TestAuditManage:
         while num < wait_audit_number:
             audit_number = self.audit.get_text(resource_audit.loc("resource_audit_number"))
             self.audit.click_wait_audit()
-            self.audit.click_audit_pass()
+            self.audit.click_audit_pass(num)
             self.audit.not_text_element(resource_audit.loc("resource_audit_number"), audit_number, "【一级审批管理】")
             num += 1
 
 
 if __name__ == '__main__':
-    pytest.main(["-s", "test03_level_one_audit_manage.py"])
+    pytest.main(["-s", "test07_level_one_audit_manage.py"])

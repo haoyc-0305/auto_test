@@ -1,6 +1,6 @@
 import os, sys
-from base_file.base_yaml import data_yaml
 sys.path.append(os.getcwd())
+from base_file.base_yaml import data_yaml
 import pytest
 from base_file.base_driver import setup, login, teardown
 from conf_file import login_page

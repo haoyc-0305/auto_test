@@ -19,9 +19,17 @@ class ResourceAudit(Method):
     def open_resource_application(self, module_type):
         self.click_element(loc("resource_audit"))
         if "资源申请" in module_type:
-            self.click_element(loc("resource_application"))
+            self.resource_application()
         elif "审批管理" in module_type:
-            self.click_element(loc("audit_manage"))
+            self.examine_manage()
+
+    # 打开资源申请
+    def resource_application(self):
+        self.click_element(loc("resource_application"))
+
+    # 打开审批管理
+    def examine_manage(self):
+        self.click_element(loc("audit_manage"))
 
     # 审批配置
     def click_audit_config(self):
@@ -70,7 +78,7 @@ class ResourceAudit(Method):
     # 保存
     def click_save(self):
         self.click_element(loc("save"))
-        sleep(2)
+        sleep(5)
 
     # 点击新建
     def click_new_resource_application(self):
@@ -126,6 +134,10 @@ class ResourceAudit(Method):
             self.click_element(loc("select_omega"))
         elif "mtsoft2d" in software_name:
             self.click_element(loc("select_mtsoft2d"))
+        elif "test1" in software_name:
+            self.click_element(loc("select_test1"))
+        elif "test2" in software_name:
+            self.click_element(loc("select_test2"))
 
     # 备注
     def input_note(self, note):
@@ -136,17 +148,40 @@ class ResourceAudit(Method):
         self.click_element(loc("submit"))
 
     # 二次确认
-    def click_reconfirm(self, application_class):
-        if "组织" in application_class:
+    def click_reconfirm(self, select_software):
+        if "mtsoft2d" in select_software:
             self.click_element(loc("reconfirm"))
+
+    # 编辑选中
+    def click_select_edit_audit(self):
+        self.click_element(loc("select_edit_audit"))
+
+    # 编辑按钮
+    def click_button_edit(self):
+        self.click_element(loc("button_edit"))
+
+    # 催办
+    def click_button_hasten(self):
+        self.click_element(loc("button_hasten"))
+
+    # 删除
+    def click_button_delete(self):
+        self.click_element(loc("button_delete"))
+
+    # 撤回
+    def click_button_recall(self):
+        self.click_element(loc("button_recall"))
 
     # 待审核
     def click_wait_audit(self):
         self.click_element(loc("wait_audit"))
 
     # 审核通过
-    def click_audit_pass(self):
-        self.click_element(loc("audit_pass"))
+    def click_audit_pass(self, num=None):
+        if num is not 2:
+            self.click_element(loc("audit_pass"))
+        else:
+            self.click_element(loc("audit_refuse"))
 
     # 资源授权
     def click_audit_manage(self):
@@ -167,3 +202,15 @@ class ResourceAudit(Method):
     # 再次确认
     def click_confirm_again(self):
         self.click_element(loc("confirm_again"))
+
+    # 已通过模块
+    def click_pass_module(self):
+        self.click_element(loc("module_pass"))
+
+    # 提交模块
+    def click_submit_module(self):
+        self.click_element(loc("module_submit"))
+
+    # 审批记录
+    def click_examine_record(self):
+        self.click_element(loc("module_examine"))

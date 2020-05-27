@@ -188,6 +188,14 @@ class SoftwareManage(Method):
         self.file_upload(fine_name, wait=2)
         self.click_element(loc("confirm_upload"))
 
+    # 更多-选中所有文件
+    def click_select_all_file(self):
+        self.click_element(loc("select_all_file"))
+
+    # 更多-批量下载
+    def click_all_download(self):
+        self.click_element(loc("all_download"))
+
     # 更多-下载文件
     def click_more_download(self):
         self.click_element(loc("download_loc"))
@@ -207,6 +215,18 @@ class SoftwareManage(Method):
         self.click_element(loc("select_all"))
         self.click_element(loc("delete_all"))
         self.click_element(loc("delete_confirm"))
+
+    # 留言
+    def click_massage(self):
+        self.click_element(loc("massage"))
+
+    # 输入留言
+    def input_massage(self, massage):
+        self.input_text(loc("input_massage"), massage)
+
+    # 发表留言
+    def click_publish_massage(self):
+        self.click_element(loc("publish_massage"))
 
     # 选中软件
     def click_software_all(self):

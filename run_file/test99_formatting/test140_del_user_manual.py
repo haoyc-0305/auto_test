@@ -30,4 +30,4 @@ class TestDelUserManual:
 
 
 if __name__ == '__main__':
-    pytest.main(["-s","test130_del_manual.py"])
+    pytest.main(["-s", "test130_del_manual.py"])

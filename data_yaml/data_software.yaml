@@ -90,3 +90,8 @@ preview:
   -
     soft_name: "Omega"
     loc: "培训资料"
+#留言
+massage:
+  soft_name: "Omega"
+  loc: "培训资料"
+  massage: "管理员发表留言信息"

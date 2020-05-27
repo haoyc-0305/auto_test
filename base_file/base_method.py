@@ -174,10 +174,11 @@ class Method:
         cr.close()
         db.close()
 
-    # 判断文件是否下载成功
-    def file_find(self, name):
+    # 判断文件是否下载成功，delete为空删除下载文件
+    def file_find(self, name, delete=None):
         sleep(5)
         a = os.walk(download)
+        file_path = download + name
         for file_list in a:
             b = 0
             for file_name in file_list[2]:
@@ -191,6 +192,20 @@ class Method:
                 new_time = time.strftime("%Y-%m-%d_%H-%M-%S")
                 self.driver.get_screenshot_as_file(image + "%s%s.png" % (new_time, name))
                 break
+        if delete is None:
+            if os.path.exists(file_path):
+                os.remove(file_path)
+            else:
+                print("没有找到文件【%s】" % name)
+
+    # 删除下载的文件
+    def delete_windows_file(self, file_name):
+        file_path = download + file_name
+        print(file_path)
+        if os.path.exists(file_path):
+            os.remove(file_path)
+        else:
+            print("没有找到文件【%s】" % file_path)
 
     # 上传文件
     def file_upload(self, file_name, wait=None):

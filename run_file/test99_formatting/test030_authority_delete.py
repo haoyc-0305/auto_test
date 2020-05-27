@@ -31,4 +31,4 @@ class TestAuthority:
 
 
 if __name__ == '__main__':
-    pytest.main(["-s", "test031_authority_delete.py"])
+    pytest.main(["-s", "test030_authority_delete.py"])

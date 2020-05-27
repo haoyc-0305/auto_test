@@ -1,0 +1,65 @@
+#00打开数据管理
+#打开数据管理
+data_manage: "By.XPATH, '//div[text()=\"数据管理\"]'"
+#打开用户数据管理
+user_data_manage: "By.XPATH, '//ul/li[text()=\"用户数据管理 \"]'"
+#01新建文件夹
+#点击软件存储
+soft_store: "By.XPATH, '//div[text()=\"Omega \"]'"
+#新建文件夹
+new_folder: "By.XPATH, '//button/span[text()=\"新建文件夹\"]'"
+#文件夹名称
+folder_name: "By.CSS_SELECTOR, 'div[aria-label=\"新建\"] input'"
+#文件备注
+folder_remark: "By.CSS_SELECTOR, 'div[aria-label=\"新建\"] textarea'"
+#确认新建
+confirm_new_folder: "By.CSS_SELECTOR, 'div[aria-label=\"新建\"] button.el-button--primary', 1"
+#新建校验
+new_folder_verify: "By.CSS_SELECTOR, '.myData div.is-scrolling-none tr'"
+#02文件上传
+#上传
+upload: "By.XPATH, '//button/span[text()=\"上传\"]'"
+#上传按钮
+upload_button: "By.CSS_SELECTOR, '#inputUpload'"
+#确认上传
+upload_confirm: "By.CSS_SELECTOR, 'div[aria-label=\"上传\"] button.el-button--primary'"
+#二次确认
+reconfirm: "By.CSS_SELECTOR, 'div.el-message-box__wrapper button.el-button--primary'"
+#文件上传校验
+file_upload_verify: "By.XPATH, '//div[text()=\"用户数据管理上传.docx \"]'"
+#03文件下载
+#选择文件
+select_file: "By.CSS_SELECTOR, '.myData div.is-scrolling-none tr span.el-checkbox__inner', 1"
+#下载
+download: "By.XPATH, '//button/span[text()=\"下载\"]', 0"
+#04文件复制
+#复制到
+copy_button: "By.XPATH, '//button/span[text()=\"复制到\"]'"
+#选择文件夹
+copy_select_folder: "By.CSS_SELECTOR, 'div[aria-label=\"复制到\"] tr.el-table__row span.el-radio__inner'"
+#复制确定
+copy_confirm: "By.CSS_SELECTOR, 'div[aria-label=\"复制到\"] button.el-button--primary'"
+#返回上级
+return: "By.CSS_SELECTOR, 'div.myData i.el-icon-top'"
+#复制校验
+copy_verify: "By.XPATH, '//div[text()=\"0.0 K\"]'"
+#05文件移动
+#移动到
+move_button: "By.XPATH, '//button/span[text()=\"移动到\"]'"
+#选择文件夹
+move_select_folder: "By.CSS_SELECTOR, 'div[aria-label=\"移动到\"] tr.el-table__row span.el-radio__inner', 1"
+#移动确定
+move_confirm: "By.CSS_SELECTOR, 'div[aria-label=\"移动到\"] button.el-button--primary'"
+#06编辑文件夹
+#选择编辑文件夹
+select_edit_folder: "By.CSS_SELECTOR, '.myData div.is-scrolling-none span.el-checkbox__inner'"
+#编辑
+edit_button: "By.XPATH, '//button/span[text()=\"编辑\"]', 0"
+#编辑名称
+edit_name: "By.CSS_SELECTOR, 'div[aria-label=\"编辑\"] input'"
+#编辑备注
+edit_remark: "By.CSS_SELECTOR, 'div[aria-label=\"编辑\"] textarea'"
+#确认编辑
+confirm_edit_folder: "By.CSS_SELECTOR, 'div[aria-label=\"编辑\"] button.el-button--primary'"
+#编辑校验
+edit_verify: "By.XPATH, '//div[text()=\"编辑文件夹 \"]'"
